@@ -1,0 +1,23 @@
+2024/10/14 22:25:17 main.go:13: test
+2024/10/14 22:39:57 base.go:35: missing "=" after "webapp.sql" in connection info string"
+2024/10/14 22:47:36 base.go:41: dial tcp [::1]:5432: connect: connection refused
+2024/10/14 22:55:05 base.go:41: pq: password authentication failed for user "postges"
+2024/10/14 22:55:06 base.go:41: pq: password authentication failed for user "postges"
+2024/10/14 22:55:07 base.go:41: pq: password authentication failed for user "postges"
+2024/10/14 22:55:08 base.go:41: pq: password authentication failed for user "postges"
+2024/10/14 22:55:10 base.go:41: pq: password authentication failed for user "postges"
+2024/10/14 22:55:12 base.go:41: pq: password authentication failed for user "postges"
+2024/10/14 22:55:15 base.go:41: pq: password authentication failed for user "postges"
+2024/10/14 22:55:22 base.go:41: pq: password authentication failed for user "postges"
+2024/10/14 22:55:35 base.go:41: pq: password authentication failed for user "postges"
+2024/10/14 22:56:01 base.go:41: pq: password authentication failed for user "postges"
+2024/10/14 22:56:39 base.go:41: pq: database "webapp.sql" does not exist
+2024/10/14 22:56:40 base.go:41: pq: database "webapp.sql" does not exist
+2024/10/14 22:56:41 base.go:41: pq: database "webapp.sql" does not exist
+2024/10/14 22:56:42 base.go:41: pq: database "webapp.sql" does not exist
+2024/10/14 22:56:43 base.go:41: pq: database "webapp.sql" does not exist
+2024/10/14 22:56:45 base.go:41: pq: database "webapp.sql" does not exist
+2024/10/14 22:56:49 base.go:41: pq: database "webapp.sql" does not exist
+2024/10/14 22:58:54 base.go:41: pq: database "webapp.sql" does not exist
+2024/10/14 23:00:32 base.go:41: pq: database "webapp" does not exist
+2024/10/14 23:01:14 base.go:41: pq: database "webapp" does not exist
