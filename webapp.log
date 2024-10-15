@@ -23,3 +23,4 @@
 2024/10/14 23:01:14 base.go:41: pq: database "webapp" does not exist
 2024/10/15 15:21:00 users.go:33: pq: syntax error at or near ","
 2024/10/15 15:23:02 users.go:33: pq: INSERT has more target columns than expressions
+2024/10/15 22:15:30 users.go:60: pq: syntax error at or near "where"

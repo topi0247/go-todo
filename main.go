@@ -15,6 +15,8 @@ func main() {
 
     fmt.Println(models.Db)
 
+    // ユーザー作成
+    /*
     u := &models.User{}
     u.Name = "test"
     u.Email = "test@example.com"
@@ -22,6 +24,31 @@ func main() {
     fmt.Println(u)
 
     u.CreateUser()
+    */
+
+    // ユーザー情報取得
+    /*
+    u, _ := models.GetUser(1)
+    fmt.Println(u)
+    */
+
+    // ユーザー情報更新
+    /*
+    u, _ := models.GetUser(1)
+    fmt.Println(u)
+    u.Name = "test2"
+    u.Email = "test2@example.com"
+    u.UpdateUser()
+    u, _ = models.GetUser(1)
+    fmt.Println(u)
+    */
+
+    // ユーザー削除
+    u, _ := models.GetUser(1)
+    fmt.Println(u)
+    u.DeleteUser()
+    u, _ = models.GetUser(1)
+    fmt.Println(u)
 }
 
 // func outputConfig(cfg config.ConfigList) {
