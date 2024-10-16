@@ -14,8 +14,9 @@ services:
     build: .
     volumes:
       - .:/app
+    command: go run main.go
     ports:
-      - 8080:80
+      - 8080:8080
     restart: always
     tty: true
     depends_on:
