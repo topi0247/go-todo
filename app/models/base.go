@@ -17,6 +17,7 @@ var err error
 
 const (
     tableNameUser = "users"
+    tableNameTodo = "todos"
 )
 
 func init() {
@@ -32,16 +33,33 @@ func init() {
         log.Fatalln(err)
     }
 
-    cmdU := fmt.Sprintf(`CREATE TABLE IF NOT EXISTS %s(
-        id SERIAL PRIMARY KEY,
-        uuid TEXT NOT NULL UNIQUE,
-        name TEXT,
-        email TEXT,
-        password TEXT,
-        created_at TIMESTAMP)`, tableNameUser)
+    cmdU := fmt.Sprintf(`create table if not exists %s(
+        id serial primary key,
+        uuid text not null unique,
+        name text,
+        email text,
+        password text,
+        created_at timestamp)`, tableNameUser)
     _, err = Db.Exec(cmdU)
     if err != nil {
-        log.Fatalln(err)
+        log.Fatalln("Error creating users table:", err)
+    }
+
+    cmdT := fmt.Sprintf(`create table if not exists %s(
+        id serial primary key,
+        content text,
+        user_id integer,
+        created_at timestamp,
+        constraint fk_user_id foreign key(user_id) references users (id)
+        )`, tableNameTodo)
+    _, err = Db.Exec(cmdT)
+    if err != nil {
+        log.Fatalln("Error creating todos table:", err)
+    }
+    cmdTI := fmt.Sprintf(`create index if not exists user_todos on %s(user_id)`, tableNameTodo)
+    _, err = Db.Exec(cmdTI)
+    if err != nil {
+        log.Fatalln("Error creating index on todos table:", err)
     }
 }
 

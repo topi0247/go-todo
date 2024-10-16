@@ -24,3 +24,10 @@
 2024/10/15 15:21:00 users.go:33: pq: syntax error at or near ","
 2024/10/15 15:23:02 users.go:33: pq: INSERT has more target columns than expressions
 2024/10/15 22:15:30 users.go:60: pq: syntax error at or near "where"
+2024/10/15 22:46:42 base.go:57: Error creating todos table: pq: syntax error at or near "user"
+2024/10/15 22:53:58 base.go:62: Error creating index on todos table: pq: relation "user_todos" already exists
+2024/10/15 22:54:22 base.go:62: Error creating index on todos table: pq: syntax error at or near "not"
+2024/10/15 22:54:29 todos.go:19: pq: insert or update on table "todos" violates foreign key constraint "fk_user_id"
+2024/10/15 22:54:59 todos.go:19: pq: insert or update on table "todos" violates foreign key constraint "fk_user_id"
+2024/10/16 22:27:35 todos.go:85: pq: syntax error at or near "from"
+2024/10/16 22:30:23 todos.go:94: pq: syntax error at or near "todos"
