@@ -1,15 +1,23 @@
 package controllers
 
 import (
-	"html/template"
-	"log"
 	"net/http"
 )
 
 func top(w http.ResponseWriter, r *http.Request) {
-	t, err := template.ParseFiles("app/views/templates/top.html")
+	_, err := session(w, r)
 	if err != nil {
-		log.Fatalln(err)
+		generateHTML(w, nil, "layout", "public_navbar", "top")
+	} else {
+		http.Redirect(w, r, "/todos", http.StatusFound)
 	}
-	t.Execute(w, "Hello World!")
+}
+
+func index(w http.ResponseWriter, r *http.Request) {
+	_, err := session(w, r)
+	if err != nil {
+		http.Redirect(w, r, "/login", http.StatusFound)
+	} else {
+		generateHTML(w, nil, "layout", "private_navbar", "index")
+	}
 }
