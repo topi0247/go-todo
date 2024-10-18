@@ -1,5 +1,5 @@
 ---
-name: 機能追加
+name: feature
 about: 機能追加用issueテンプレート
 title: 'feature:'
 labels: feature
