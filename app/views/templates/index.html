@@ -1,3 +1,29 @@
-{{define "content"}}
-<h1>Index</h1>
-{{end}}
+{{ define "content" }}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+  <div class="flex justify-between items-center">
+    <h1 class="text-3xl font-bold text-gray-900">Sample TodoApp</h1>
+    <p class="text-lg text-gray-700">ユーザー名: <span class="font-semibold">{{.Name}}</span></p>
+  </div>
+
+  <div class="mt-4">
+    <a href="/todos/new" class="text-blue-600 hover:text-blue-800 underline">新規作成</a>
+  </div>
+
+  <div class="mt-6 space-y-4">
+    {{ range .Todos }}
+    <div class="bg-white shadow p-4 rounded-lg">
+      <div class="text-lg font-semibold text-gray-900">
+        {{ .Content }}
+      </div>
+      <div class="flex space-x-4 mt-2">
+        <a href="/todos/edit/{{.ID}}" class="text-blue-600 hover:text-blue-800 underline">編集</a>
+        <a href="/todos/delete/{{.ID}}" class="text-red-600 hover:text-red-800 underline">削除</a>
+      </div>
+    </div>
+    <hr class="border-t border-gray-300">
+    {{ else }}
+    <p class="text-center text-gray-500">現在Todoがありません</p>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
