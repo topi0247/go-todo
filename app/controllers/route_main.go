@@ -1,11 +1,25 @@
 package controllers
 
 import (
+	"log"
 	"net/http"
 	"udemy-todo-app/app/helpers"
+	"udemy-todo-app/app/models"
+	"udemy-todo-app/infrastructure/db"
 )
 
 func top(w http.ResponseWriter, r *http.Request) {
+	userUUID := helpers.GetSession(r)
+	log.Printf("userUUID: %s", userUUID)
+	if userUUID != "" {
+		_, err := models.Users(
+			models.UserWhere.UUID.EQ(userUUID),
+		).One(r.Context(), db.DB)
+		if err == nil {
+			http.Redirect(w, r, "/todos", http.StatusFound)
+			return
+		}
+	}
 	generateHTML(w, nil, "layout", "public_navbar", "top")
 }
 

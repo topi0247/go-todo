@@ -1296,3 +1296,18 @@ created by net/http.(*Server).Serve in goroutine 1
 2024/10/20 08:29:37 route_auth.go:58: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
 2024/10/20 08:29:37 sessions.go:50: flash: {[] [認証に失敗しました。再度ログインしてください] []}
 2024/10/20 08:29:46 sessions.go:50: flash: {[ログインしました] [] []}
+2024/10/20 08:33:34 route_auth.go:58: userUUID: 
+2024/10/20 08:33:34 route_auth.go:66: sql: no rows in result set
+2024/10/20 08:33:34 sessions.go:50: flash: {[] [] []}
+2024/10/20 08:33:34 route_auth.go:68: {[] [] []}
+2024/10/20 08:33:45 sessions.go:50: flash: {[ログインしました] [] []}
+2024/10/20 08:34:46 route_auth.go:58: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:34:46 sessions.go:50: flash: {[] [] []}
+2024/10/20 08:34:55 sessions.go:50: flash: {[ログインしました] [] []}
+2024/10/20 08:35:27 db.go:22: Database connection established
+2024/10/20 08:35:28 route_main.go:13: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:35:28 sessions.go:50: flash: {[] [] []}
+2024/10/20 08:35:30 route_main.go:13: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:35:30 sessions.go:50: flash: {[] [] []}
+2024/10/20 08:35:31 route_main.go:13: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:35:31 sessions.go:50: flash: {[] [] []}
