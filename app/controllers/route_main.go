@@ -142,22 +142,29 @@ func todoUpdate(w http.ResponseWriter, r *http.Request, id int) {
 	http.Redirect(w, r, "/todos", http.StatusFound)
 }
 
-// func todoDelete(w http.ResponseWriter, r *http.Request, id int) {
-// 	sess, err := session(w, r)
-// 	if err != nil {
-// 		http.Redirect(w, r, "/login", http.StatusFound)
-// 	} else {
-// 		_, err := sess.GetUserBySession()
-// 		if err != nil {
-// 			log.Println(err)
-// 		}
-// 		t, err := models.GetTodo(id)
-// 		if err != nil {
-// 			log.Fatalln()
-// 		}
-// 		if err := t.DeleteTodo(); err != nil {
-// 			log.Println(err)
-// 		}
-// 		http.Redirect(w, r, "/todos", http.StatusFound)
-// 	}
-// }
+func todoDelete(w http.ResponseWriter, r *http.Request, id int) {
+	if !helpers.Authenticate(w, r) {
+		return
+	}
+
+	user := helpers.CurrentUser(r)
+
+	todo, err := models.Todos(
+		models.TodoWhere.ID.EQ(id),
+		models.TodoWhere.UserID.EQ(user.ID),
+	).One(r.Context(), db.DB)
+	if err != nil {
+		helpers.AppendFlash(w, r, helpers.FlashError, "タスクが見つかりません")
+		http.Redirect(w, r, "/todos", http.StatusFound)
+		return
+	}
+	if _, err := todo.Delete(r.Context(), db.DB); err != nil {
+		log.Println(err)
+		helpers.AppendFlash(w, r, helpers.FlashError, "タスクの削除に失敗しました")
+		http.Redirect(w, r, "/todos", http.StatusFound)
+		return
+	}
+
+	helpers.AppendFlash(w, r, helpers.FlashSuccess, "タスクを削除しました")
+	http.Redirect(w, r, "/todos", http.StatusFound)
+}

@@ -1354,3 +1354,7 @@ created by net/http.(*Server).Serve in goroutine 1
 2024/10/20 09:22:09 route_main.go:15: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
 2024/10/20 09:22:16 db.go:22: Database connection established
 2024/10/20 09:22:53 db.go:22: Database connection established
+2024/10/20 09:27:23 db.go:22: Database connection established
+2024/10/20 09:27:27 route_main.go:15: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 09:27:29 route_main.go:15: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 09:27:45 db.go:22: Database connection established
