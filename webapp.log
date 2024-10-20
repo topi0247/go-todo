@@ -319,3 +319,338 @@ net/http.(*conn).serve(0xc0001d47e0, {0x8bb120, 0xc00021ca80})
 	/usr/local/go/src/net/http/server.go:2044 +0x5e8
 created by net/http.(*Server).Serve in goroutine 1
 	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 05:50:47 server.go:3418: http: panic serving 192.168.64.1:34322: runtime error: invalid memory address or nil pointer dereference
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x797e80?, 0xaea500?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+udemy-todo-app/app/models.(*User).Insert(0xc000206090, {0x8a38f8, 0xc00021e000}, {0x0, 0x0}, {0xc000204005?, {0x0?, 0xc000206000?, 0xc0000219f8?}})
+	/app/app/models/users.go:579 +0xc3c
+udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc000222000}, 0xc000202000)
+	/app/app/controllers/route_auth.go:62 +0x3a5
+net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc000222000?}, 0x10?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413665?, {0x8a3170, 0xc000222000}, 0xc000202000)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0x8a21f8?}, {0x8a3170?, 0xc000222000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc0000e2480, {0x8a38c0, 0xc0001a5290})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 05:50:47 server.go:3418: http: panic serving 192.168.64.1:44028: runtime error: invalid memory address or nil pointer dereference
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x797e80?, 0xaea500?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+udemy-todo-app/app/models.(*User).Insert(0xc0002062d0, {0x8a38f8, 0xc00021e140}, {0x0, 0x0}, {0xc00020410d?, {0x0?, 0xc0002061b0?, 0xc0000769f8?}})
+	/app/app/models/users.go:579 +0xc3c
+udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc0002221c0}, 0xc000202120)
+	/app/app/controllers/route_auth.go:62 +0x3a5
+net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc0002221c0?}, 0x10?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413665?, {0x8a3170, 0xc0002221c0}, 0xc000202120)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0x8a21f8?}, {0x8a3170?, 0xc0002221c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc000206120, {0x8a38c0, 0xc0001a5290})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 05:56:42 server.go:3418: http: panic serving 192.168.64.1:44480: runtime error: invalid memory address or nil pointer dereference
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x797e80?, 0xaea500?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+udemy-todo-app/app/models.(*User).Insert(0xc000206510, {0x8a38f8, 0xc00021e230}, {0x0, 0x0}, {0xc0002041fd?, {0x0?, 0xc0002063f0?, 0xc0000769f8?}})
+	/app/app/models/users.go:579 +0xc3c
+udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc000222380}, 0xc000202240)
+	/app/app/controllers/route_auth.go:62 +0x3a5
+net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc000222380?}, 0x10?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413665?, {0x8a3170, 0xc000222380}, 0xc000202240)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0x8a21f8?}, {0x8a3170?, 0xc000222380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc000206360, {0x8a38c0, 0xc0001a5290})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 05:57:02 server.go:3418: http: panic serving 192.168.64.1:44496: runtime error: invalid memory address or nil pointer dereference
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x797e80?, 0xaea500?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+udemy-todo-app/app/models.(*User).Insert(0xc000116090, {0x8a38f8, 0xc00010e050}, {0x0, 0x0}, {0xc000114005?, {0x0?, 0xc000116000?, 0xc0000d99f8?}})
+	/app/app/models/users.go:579 +0xc3c
+udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc000132000}, 0xc000112000)
+	/app/app/controllers/route_auth.go:62 +0x3a5
+net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc000132000?}, 0x10?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413665?, {0x8a3170, 0xc000132000}, 0xc000112000)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0x8a21f8?}, {0x8a3170?, 0xc000132000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc0002065a0, {0x8a38c0, 0xc0001a5290})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 05:57:02 server.go:3418: http: panic serving 192.168.64.1:44412: runtime error: invalid memory address or nil pointer dereference
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x797e80?, 0xaea500?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+udemy-todo-app/app/models.(*User).Insert(0xc0001162d0, {0x8a38f8, 0xc00010e140}, {0x0, 0x0}, {0xc00011410d?, {0x0?, 0xc0001161b0?, 0xc00016c9f8?}})
+	/app/app/models/users.go:579 +0xc3c
+udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc0001321c0}, 0xc000112120)
+	/app/app/controllers/route_auth.go:62 +0x3a5
+net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc0001321c0?}, 0x10?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413665?, {0x8a3170, 0xc0001321c0}, 0xc000112120)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0x8a21f8?}, {0x8a3170?, 0xc0001321c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc000116120, {0x8a38c0, 0xc0001a5290})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 05:57:08 main.go:14: sql: unknown driver "postgres" (forgotten import?)
+2024/10/20 05:57:09 main.go:14: sql: unknown driver "postgres" (forgotten import?)
+2024/10/20 05:57:10 main.go:14: sql: unknown driver "postgres" (forgotten import?)
+2024/10/20 05:57:11 main.go:14: sql: unknown driver "postgres" (forgotten import?)
+2024/10/20 05:57:12 main.go:14: sql: unknown driver "postgres" (forgotten import?)
+2024/10/20 05:57:14 main.go:14: sql: unknown driver "postgres" (forgotten import?)
+2024/10/20 05:57:18 main.go:14: sql: unknown driver "postgres" (forgotten import?)
+2024/10/20 05:57:25 main.go:14: sql: unknown driver "postgres" (forgotten import?)
+2024/10/20 05:57:38 main.go:14: sql: unknown driver "postgres" (forgotten import?)
+2024/10/20 05:58:04 main.go:14: sql: unknown driver "postgres" (forgotten import?)
+2024/10/20 05:58:23 main.go:14: sql: unknown driver "postgres" (forgotten import?)
+2024/10/20 05:58:25 main.go:14: sql: unknown driver "postgres" (forgotten import?)
+2024/10/20 05:58:26 main.go:14: sql: unknown driver "postgres" (forgotten import?)
+2024/10/20 05:58:27 main.go:14: sql: unknown driver "postgres" (forgotten import?)
+2024/10/20 05:58:28 main.go:14: sql: unknown driver "postgres" (forgotten import?)
+2024/10/20 05:58:30 main.go:14: sql: unknown driver "postgres" (forgotten import?)
+2024/10/20 05:58:34 main.go:14: sql: unknown driver "postgres" (forgotten import?)
+2024/10/20 05:58:41 main.go:14: sql: unknown driver "postgres" (forgotten import?)
+2024/10/20 06:00:12 server.go:3418: http: panic serving 192.168.64.1:39958: runtime error: invalid memory address or nil pointer dereference
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x797e80?, 0xaea500?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+udemy-todo-app/app/models.(*User).Insert(0xc000114090, {0x8a38f8, 0xc00012c000}, {0x0, 0x0}, {0xc000112005?, {0x0?, 0xc000114000?, 0xc0000df9f8?}})
+	/app/app/models/users.go:579 +0xc3c
+udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc000130000}, 0xc000110000)
+	/app/app/controllers/route_auth.go:38 +0x3a5
+net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc000130000?}, 0x10?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413665?, {0x8a3170, 0xc000130000}, 0xc000110000)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0x8a21f8?}, {0x8a3170?, 0xc000130000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc0000e2480, {0x8a38c0, 0xc0001a5290})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 06:00:12 server.go:3418: http: panic serving 192.168.64.1:58476: runtime error: invalid memory address or nil pointer dereference
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x797e80?, 0xaea500?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+udemy-todo-app/app/models.(*User).Insert(0xc0001142d0, {0x8a38f8, 0xc00012c140}, {0x0, 0x0}, {0xc00011210d?, {0x0?, 0xc0001141b0?, 0xc0000769f8?}})
+	/app/app/models/users.go:579 +0xc3c
+udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc0001301c0}, 0xc000110120)
+	/app/app/controllers/route_auth.go:38 +0x3a5
+net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc0001301c0?}, 0x10?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413665?, {0x8a3170, 0xc0001301c0}, 0xc000110120)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0x8a21f8?}, {0x8a3170?, 0xc0001301c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc000114120, {0x8a38c0, 0xc0001a5290})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 06:01:02 server.go:3418: http: panic serving 192.168.64.1:55802: runtime error: invalid memory address or nil pointer dereference
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x797e80?, 0xaea500?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+udemy-todo-app/app/models.(*User).Insert(0xc000206120, {0x8a38f8, 0xc00021a140}, {0x0, 0x0}, {0xc00020407d?, {0x0?, 0xc000206090?, 0xc0000df9f8?}})
+	/app/app/models/users.go:579 +0xc3c
+udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc00021e0e0}, 0xc0002027e0)
+	/app/app/controllers/route_auth.go:38 +0x3a5
+net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc00021e0e0?}, 0x10?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413665?, {0x8a3170, 0xc00021e0e0}, 0xc0002027e0)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0x8a21f8?}, {0x8a3170?, 0xc00021e0e0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc000114360, {0x8a38c0, 0xc0001a5290})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 06:01:02 server.go:3418: http: panic serving 192.168.64.1:36336: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x797e80?, 0xaea500?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+udemy-todo-app/app/models.(*User).Insert(0xc000206360, {0x8a38f8, 0xc00021a230}, {0x0, 0x0}, {0xc00020416d?, {0x0?, 0xc000206240?, 0xc0002689f8?}})
+	/app/app/models/users.go:579 +0xc3c
+udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc00021e2a0}, 0xc000202900)
+	/app/app/controllers/route_auth.go:38 +0x3a5
+net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc00021e2a0?}, 0x10?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413665?, {0x8a3170, 0xc00021e2a0}, 0xc000202900)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0x8a21f8?}, {0x8a3170?, 0xc00021e2a0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc0002061b0, {0x8a38c0, 0xc0001a5290})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 06:03:56 main.go:14: sql: unknown driver "postgres" (forgotten import?)
+2024/10/20 06:05:00 main.go:14: sql: unknown driver "postgres" (forgotten import?)
+2024/10/20 06:05:48 server.go:3418: http: panic serving 192.168.64.1:39432: runtime error: invalid memory address or nil pointer dereference
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x797e80?, 0xaea500?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+udemy-todo-app/app/models.(*User).Insert(0xc0000e27e0, {0x8a38f8, 0xc00009d2c0}, {0x0, 0x0}, {0xc00001c3f5?, {0x0?, 0xc0000e2750?, 0xc0000df9f8?}})
+	/app/app/models/users.go:579 +0xc3c
+udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc0000e4c40}, 0xc0001dd7a0)
+	/app/app/controllers/route_auth.go:38 +0x3a5
+net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc0000e4c40?}, 0x10?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413665?, {0x8a3170, 0xc0000e4c40}, 0xc0001dd7a0)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0x8a21f8?}, {0x8a3170?, 0xc0000e4c40?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc0002063f0, {0x8a38c0, 0xc0001a5290})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 06:05:48 server.go:3418: http: panic serving 192.168.64.1:39748: runtime error: invalid memory address or nil pointer dereference
+goroutine 11 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x797e80?, 0xaea500?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+udemy-todo-app/app/models.(*User).Insert(0xc0000e2a20, {0x8a38f8, 0xc00009d3b0}, {0x0, 0x0}, {0xc00001c4e5?, {0x0?, 0xc0000e2900?, 0xc00007b9f8?}})
+	/app/app/models/users.go:579 +0xc3c
+udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc0000e4e00}, 0xc0001dd8c0)
+	/app/app/controllers/route_auth.go:38 +0x3a5
+net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc0000e4e00?}, 0x10?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413665?, {0x8a3170, 0xc0000e4e00}, 0xc0001dd8c0)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0x8a21f8?}, {0x8a3170?, 0xc0000e4e00?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc0000e2870, {0x8a38c0, 0xc0001a5290})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 06:06:01 server.go:3418: http: panic serving 192.168.64.1:39754: runtime error: invalid memory address or nil pointer dereference
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x797e80?, 0xaea500?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+udemy-todo-app/app/models.(*User).Insert(0xc0000e2cf0, {0x8a38f8, 0xc00009d590}, {0x0, 0x0}, {0xc00001c61d?, {0x0?, 0xc0000e2c60?, 0xc0000df9f8?}})
+	/app/app/models/users.go:579 +0xc3c
+udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc0000e50a0}, 0xc0001fa360)
+	/app/app/controllers/route_auth.go:38 +0x3a5
+net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc0000e50a0?}, 0x10?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413665?, {0x8a3170, 0xc0000e50a0}, 0xc0001fa360)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0x8a21f8?}, {0x8a3170?, 0xc0000e50a0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc0000e2ab0, {0x8a38c0, 0xc0001a5290})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 06:06:01 server.go:3418: http: panic serving 192.168.64.1:50944: runtime error: invalid memory address or nil pointer dereference
+goroutine 16 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x797e80?, 0xaea500?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+udemy-todo-app/app/models.(*User).Insert(0xc0000e2f30, {0x8a38f8, 0xc00009d680}, {0x0, 0x0}, {0xc00001c70d?, {0x0?, 0xc0000e2e10?, 0xc00007b9f8?}})
+	/app/app/models/users.go:579 +0xc3c
+udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc0000e5260}, 0xc0001fa480)
+	/app/app/controllers/route_auth.go:38 +0x3a5
+net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc0000e5260?}, 0x10?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413665?, {0x8a3170, 0xc0000e5260}, 0xc0001fa480)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0x8a21f8?}, {0x8a3170?, 0xc0000e5260?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc0000e2d80, {0x8a38c0, 0xc0001a5290})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 06:08:35 server.go:3418: http: panic serving 192.168.64.1:60944: runtime error: invalid memory address or nil pointer dereference
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x797e80?, 0xaea500?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+udemy-todo-app/app/models.(*User).Insert(0xc0001146c0, {0x8a38f8, 0xc00012c4b0}, {0x0, 0x0}, {0xc0001122ed?, {0x0?, 0xc000114630?, 0xc0000df9f8?}})
+	/app/app/models/users.go:579 +0xc3c
+udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc000130620}, 0xc000111b00)
+	/app/app/controllers/route_auth.go:38 +0x3a5
+net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc000130620?}, 0x10?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413665?, {0x8a3170, 0xc000130620}, 0xc000111b00)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0x8a21f8?}, {0x8a3170?, 0xc000130620?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc0000e2fc0, {0x8a38c0, 0xc0001a5290})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 06:08:35 server.go:3418: http: panic serving 192.168.64.1:36918: runtime error: invalid memory address or nil pointer dereference
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x797e80?, 0xaea500?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+udemy-todo-app/app/models.(*User).Insert(0xc000114900, {0x8a38f8, 0xc00012c5a0}, {0x0, 0x0}, {0xc0001123dd?, {0x0?, 0xc0001147e0?, 0xc0000769f8?}})
+	/app/app/models/users.go:579 +0xc3c
+udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc0001307e0}, 0xc000111c20)
+	/app/app/controllers/route_auth.go:38 +0x3a5
+net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc0001307e0?}, 0x10?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413665?, {0x8a3170, 0xc0001307e0}, 0xc000111c20)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0x8a21f8?}, {0x8a3170?, 0xc0001307e0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc000114750, {0x8a38c0, 0xc0001a5290})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 06:08:57 route_auth.go:47: Failed to get database connection
+2024/10/20 06:10:08 main.go:34: Database connection established
+2024/10/20 06:10:24 route_auth.go:41: Failed to get database connection
+2024/10/20 06:11:42 main.go:37: Database connection established
+2024/10/20 06:11:50 route_auth.go:41: Failed to get database connection
+2024/10/20 06:21:30 db.go:22: Database connection established
+2024/10/20 06:21:50 route_auth.go:41: Failed to get database connection
+2024/10/20 06:21:58 db.go:22: Database connection established
+2024/10/20 06:22:06 route_auth.go:41: models: unable to insert into users: pq: relation "users" does not exist
+2024/10/20 06:23:09 db.go:22: Database connection established
+2024/10/20 06:23:22 route_auth.go:41: models: unable to insert into users: pq: relation "users" does not exist
+2024/10/20 06:31:50 db.go:22: Database connection established
+2024/10/20 06:32:31 route_auth.go:41: models: unable to insert into users: pq: duplicate key value violates unique constraint "users_email_key"
+2024/10/20 06:34:21 db.go:22: Database connection established
+2024/10/20 06:35:09 db.go:22: Database connection established

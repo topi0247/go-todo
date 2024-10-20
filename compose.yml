@@ -14,6 +14,7 @@ services:
     build: .
     volumes:
       - .:/app
+      - go_modules:/go
     command: go run main.go
     ports:
       - 8080:8080
@@ -23,3 +24,4 @@ services:
       - db
 volumes:
   db_data:
+  go_modules:
