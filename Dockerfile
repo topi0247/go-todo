@@ -11,8 +11,11 @@ RUN set -x \
     && go install github.com/cosmtrek/air@v1.48.0 \
     && go install github.com/rubenv/sql-migrate/...@latest \
     && go install github.com/volatiletech/sqlboiler/v4@latest \
-    && go install github.com/volatiletech/sqlboiler/v4/drivers/sqlboiler-psql@latest
+    && go install github.com/volatiletech/sqlboiler/v4/drivers/sqlboiler-psql@latest \
+    && go install github.com/joho/godotenv/cmd/godotenv@latest
 
 COPY . .
+
+RUN chmod +x ./entry-point.sh
 
 ENTRYPOINT ["./entry-point.sh"]

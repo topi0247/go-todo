@@ -1,3 +1,4 @@
+#!/bin/sh
 set -o errexit
 
 sql-migrate up
