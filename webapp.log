@@ -37,7 +37,7 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x7ed880?, 0xc0002480c0?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc00023a9a0}, 0xc00025e6c0)
+todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc00023a9a0}, 0xc00025e6c0)
 	/app/app/controllers/server.go:43 +0xcf
 net/http.HandlerFunc.ServeHTTP(0xb3c400?, {0x8ba6f0?, 0xc00023a9a0?}, 0x6ae25a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -55,7 +55,7 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x7ed880?, 0xc000248108?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc00023ab60}, 0xc00025e7e0)
+todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc00023ab60}, 0xc00025e7e0)
 	/app/app/controllers/server.go:43 +0xcf
 net/http.HandlerFunc.ServeHTTP(0xb3c400?, {0x8ba6f0?, 0xc00023ab60?}, 0x6ae25a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -73,7 +73,7 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x7ed880?, 0xc000248150?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc00023ad20}, 0xc00025e900)
+todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc00023ad20}, 0xc00025e900)
 	/app/app/controllers/server.go:43 +0xcf
 net/http.HandlerFunc.ServeHTTP(0xb3c400?, {0x8ba6f0?, 0xc00023ad20?}, 0x6ae25a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -91,7 +91,7 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x7ed880?, 0xc0001160d8?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc00011a1c0}, 0xc000114ea0)
+todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc00011a1c0}, 0xc000114ea0)
 	/app/app/controllers/server.go:43 +0xcf
 net/http.HandlerFunc.ServeHTTP(0xb3c400?, {0x8ba6f0?, 0xc00011a1c0?}, 0x6ae25a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -109,7 +109,7 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x7ed880?, 0xc000116120?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc00011a380}, 0xc000114fc0)
+todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc00011a380}, 0xc000114fc0)
 	/app/app/controllers/server.go:43 +0xcf
 net/http.HandlerFunc.ServeHTTP(0xb3c400?, {0x8ba6f0?, 0xc00011a380?}, 0x6ae25a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -127,7 +127,7 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x7ed880?, 0xc000248198?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc00023aee0}, 0xc00025ea20)
+todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc00023aee0}, 0xc00025ea20)
 	/app/app/controllers/server.go:43 +0xcf
 net/http.HandlerFunc.ServeHTTP(0xb3c400?, {0x8ba6f0?, 0xc00023aee0?}, 0x6ae25a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -145,7 +145,7 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x7ed880?, 0xc000116168?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc00011a540}, 0xc0001150e0)
+todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc00011a540}, 0xc0001150e0)
 	/app/app/controllers/server.go:43 +0xcf
 net/http.HandlerFunc.ServeHTTP(0xb3c400?, {0x8ba6f0?, 0xc00011a540?}, 0x6ae25a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -163,7 +163,7 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x7ed880?, 0xc00001c6d8?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc0001d2a80}, 0xc00030eb40)
+todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc0001d2a80}, 0xc00030eb40)
 	/app/app/controllers/server.go:43 +0xcf
 net/http.HandlerFunc.ServeHTTP(0xb3c400?, {0x8ba6f0?, 0xc0001d2a80?}, 0x6ae25a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -181,7 +181,7 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x7ed880?, 0xc00001c720?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc0001d2c40}, 0xc00030ec60)
+todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc0001d2c40}, 0xc00030ec60)
 	/app/app/controllers/server.go:43 +0xcf
 net/http.HandlerFunc.ServeHTTP(0xb3c400?, {0x8ba6f0?, 0xc0001d2c40?}, 0x6ae25a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -199,7 +199,7 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x7ed880?, 0xc000132150?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc000124460}, 0xc00013bb00)
+todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc000124460}, 0xc00013bb00)
 	/app/app/controllers/server.go:43 +0xcf
 net/http.HandlerFunc.ServeHTTP(0xb3c400?, {0x8ba6f0?, 0xc000124460?}, 0x6ae25a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -217,7 +217,7 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x7ed880?, 0xc000132198?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc000124620}, 0xc00013bc20)
+todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc000124620}, 0xc00013bc20)
 	/app/app/controllers/server.go:43 +0xcf
 net/http.HandlerFunc.ServeHTTP(0xb3c400?, {0x8ba6f0?, 0xc000124620?}, 0x6ae25a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -235,7 +235,7 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x7ed880?, 0xc0001321e0?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc0001247e0}, 0xc00013bd40)
+todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc0001247e0}, 0xc00013bd40)
 	/app/app/controllers/server.go:43 +0xcf
 net/http.HandlerFunc.ServeHTTP(0xb3c400?, {0x8ba6f0?, 0xc0001247e0?}, 0x6ae25a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -253,7 +253,7 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x7ed880?, 0xc000132228?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc0001249a0}, 0xc00013be60)
+todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc0001249a0}, 0xc00013be60)
 	/app/app/controllers/server.go:43 +0xcf
 net/http.HandlerFunc.ServeHTTP(0xb3c400?, {0x8ba6f0?, 0xc0001249a0?}, 0x6ae25a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -271,7 +271,7 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x7ed880?, 0xc000250078?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc0002428c0}, 0xc000266240)
+todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc0002428c0}, 0xc000266240)
 	/app/app/controllers/server.go:43 +0xcf
 net/http.HandlerFunc.ServeHTTP(0xb3c400?, {0x8ba6f0?, 0xc0002428c0?}, 0x6ae25a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -289,7 +289,7 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x7ed880?, 0xc00014c5e8?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc0001d8620}, 0xc0001f4900)
+todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc0001d8620}, 0xc0001f4900)
 	/app/app/controllers/server.go:43 +0xcf
 net/http.HandlerFunc.ServeHTTP(0xb3c400?, {0x8ba6f0?, 0xc0001d8620?}, 0x6ae25a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -307,7 +307,7 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x7ed880?, 0xc00014c630?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc0001d87e0}, 0xc0001f4a20)
+todo-app/app/controllers.StartMainServer.parseURL.func1({0x8ba6f0, 0xc0001d87e0}, 0xc0001f4a20)
 	/app/app/controllers/server.go:43 +0xcf
 net/http.HandlerFunc.ServeHTTP(0xb3c400?, {0x8ba6f0?, 0xc0001d87e0?}, 0x6ae25a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -325,9 +325,9 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x797e80?, 0xaea500?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/models.(*User).Insert(0xc000206090, {0x8a38f8, 0xc00021e000}, {0x0, 0x0}, {0xc000204005?, {0x0?, 0xc000206000?, 0xc0000219f8?}})
+todo-app/app/models.(*User).Insert(0xc000206090, {0x8a38f8, 0xc00021e000}, {0x0, 0x0}, {0xc000204005?, {0x0?, 0xc000206000?, 0xc0000219f8?}})
 	/app/app/models/users.go:579 +0xc3c
-udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc000222000}, 0xc000202000)
+todo-app/app/controllers.signUp({0x8a3170, 0xc000222000}, 0xc000202000)
 	/app/app/controllers/route_auth.go:62 +0x3a5
 net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc000222000?}, 0x10?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -345,9 +345,9 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x797e80?, 0xaea500?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/models.(*User).Insert(0xc0002062d0, {0x8a38f8, 0xc00021e140}, {0x0, 0x0}, {0xc00020410d?, {0x0?, 0xc0002061b0?, 0xc0000769f8?}})
+todo-app/app/models.(*User).Insert(0xc0002062d0, {0x8a38f8, 0xc00021e140}, {0x0, 0x0}, {0xc00020410d?, {0x0?, 0xc0002061b0?, 0xc0000769f8?}})
 	/app/app/models/users.go:579 +0xc3c
-udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc0002221c0}, 0xc000202120)
+todo-app/app/controllers.signUp({0x8a3170, 0xc0002221c0}, 0xc000202120)
 	/app/app/controllers/route_auth.go:62 +0x3a5
 net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc0002221c0?}, 0x10?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -365,9 +365,9 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x797e80?, 0xaea500?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/models.(*User).Insert(0xc000206510, {0x8a38f8, 0xc00021e230}, {0x0, 0x0}, {0xc0002041fd?, {0x0?, 0xc0002063f0?, 0xc0000769f8?}})
+todo-app/app/models.(*User).Insert(0xc000206510, {0x8a38f8, 0xc00021e230}, {0x0, 0x0}, {0xc0002041fd?, {0x0?, 0xc0002063f0?, 0xc0000769f8?}})
 	/app/app/models/users.go:579 +0xc3c
-udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc000222380}, 0xc000202240)
+todo-app/app/controllers.signUp({0x8a3170, 0xc000222380}, 0xc000202240)
 	/app/app/controllers/route_auth.go:62 +0x3a5
 net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc000222380?}, 0x10?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -385,9 +385,9 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x797e80?, 0xaea500?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/models.(*User).Insert(0xc000116090, {0x8a38f8, 0xc00010e050}, {0x0, 0x0}, {0xc000114005?, {0x0?, 0xc000116000?, 0xc0000d99f8?}})
+todo-app/app/models.(*User).Insert(0xc000116090, {0x8a38f8, 0xc00010e050}, {0x0, 0x0}, {0xc000114005?, {0x0?, 0xc000116000?, 0xc0000d99f8?}})
 	/app/app/models/users.go:579 +0xc3c
-udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc000132000}, 0xc000112000)
+todo-app/app/controllers.signUp({0x8a3170, 0xc000132000}, 0xc000112000)
 	/app/app/controllers/route_auth.go:62 +0x3a5
 net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc000132000?}, 0x10?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -405,9 +405,9 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x797e80?, 0xaea500?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/models.(*User).Insert(0xc0001162d0, {0x8a38f8, 0xc00010e140}, {0x0, 0x0}, {0xc00011410d?, {0x0?, 0xc0001161b0?, 0xc00016c9f8?}})
+todo-app/app/models.(*User).Insert(0xc0001162d0, {0x8a38f8, 0xc00010e140}, {0x0, 0x0}, {0xc00011410d?, {0x0?, 0xc0001161b0?, 0xc00016c9f8?}})
 	/app/app/models/users.go:579 +0xc3c
-udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc0001321c0}, 0xc000112120)
+todo-app/app/controllers.signUp({0x8a3170, 0xc0001321c0}, 0xc000112120)
 	/app/app/controllers/route_auth.go:62 +0x3a5
 net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc0001321c0?}, 0x10?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -443,9 +443,9 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x797e80?, 0xaea500?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/models.(*User).Insert(0xc000114090, {0x8a38f8, 0xc00012c000}, {0x0, 0x0}, {0xc000112005?, {0x0?, 0xc000114000?, 0xc0000df9f8?}})
+todo-app/app/models.(*User).Insert(0xc000114090, {0x8a38f8, 0xc00012c000}, {0x0, 0x0}, {0xc000112005?, {0x0?, 0xc000114000?, 0xc0000df9f8?}})
 	/app/app/models/users.go:579 +0xc3c
-udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc000130000}, 0xc000110000)
+todo-app/app/controllers.signUp({0x8a3170, 0xc000130000}, 0xc000110000)
 	/app/app/controllers/route_auth.go:38 +0x3a5
 net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc000130000?}, 0x10?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -463,9 +463,9 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x797e80?, 0xaea500?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/models.(*User).Insert(0xc0001142d0, {0x8a38f8, 0xc00012c140}, {0x0, 0x0}, {0xc00011210d?, {0x0?, 0xc0001141b0?, 0xc0000769f8?}})
+todo-app/app/models.(*User).Insert(0xc0001142d0, {0x8a38f8, 0xc00012c140}, {0x0, 0x0}, {0xc00011210d?, {0x0?, 0xc0001141b0?, 0xc0000769f8?}})
 	/app/app/models/users.go:579 +0xc3c
-udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc0001301c0}, 0xc000110120)
+todo-app/app/controllers.signUp({0x8a3170, 0xc0001301c0}, 0xc000110120)
 	/app/app/controllers/route_auth.go:38 +0x3a5
 net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc0001301c0?}, 0x10?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -483,9 +483,9 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x797e80?, 0xaea500?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/models.(*User).Insert(0xc000206120, {0x8a38f8, 0xc00021a140}, {0x0, 0x0}, {0xc00020407d?, {0x0?, 0xc000206090?, 0xc0000df9f8?}})
+todo-app/app/models.(*User).Insert(0xc000206120, {0x8a38f8, 0xc00021a140}, {0x0, 0x0}, {0xc00020407d?, {0x0?, 0xc000206090?, 0xc0000df9f8?}})
 	/app/app/models/users.go:579 +0xc3c
-udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc00021e0e0}, 0xc0002027e0)
+todo-app/app/controllers.signUp({0x8a3170, 0xc00021e0e0}, 0xc0002027e0)
 	/app/app/controllers/route_auth.go:38 +0x3a5
 net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc00021e0e0?}, 0x10?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -503,9 +503,9 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x797e80?, 0xaea500?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/models.(*User).Insert(0xc000206360, {0x8a38f8, 0xc00021a230}, {0x0, 0x0}, {0xc00020416d?, {0x0?, 0xc000206240?, 0xc0002689f8?}})
+todo-app/app/models.(*User).Insert(0xc000206360, {0x8a38f8, 0xc00021a230}, {0x0, 0x0}, {0xc00020416d?, {0x0?, 0xc000206240?, 0xc0002689f8?}})
 	/app/app/models/users.go:579 +0xc3c
-udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc00021e2a0}, 0xc000202900)
+todo-app/app/controllers.signUp({0x8a3170, 0xc00021e2a0}, 0xc000202900)
 	/app/app/controllers/route_auth.go:38 +0x3a5
 net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc00021e2a0?}, 0x10?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -525,9 +525,9 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x797e80?, 0xaea500?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/models.(*User).Insert(0xc0000e27e0, {0x8a38f8, 0xc00009d2c0}, {0x0, 0x0}, {0xc00001c3f5?, {0x0?, 0xc0000e2750?, 0xc0000df9f8?}})
+todo-app/app/models.(*User).Insert(0xc0000e27e0, {0x8a38f8, 0xc00009d2c0}, {0x0, 0x0}, {0xc00001c3f5?, {0x0?, 0xc0000e2750?, 0xc0000df9f8?}})
 	/app/app/models/users.go:579 +0xc3c
-udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc0000e4c40}, 0xc0001dd7a0)
+todo-app/app/controllers.signUp({0x8a3170, 0xc0000e4c40}, 0xc0001dd7a0)
 	/app/app/controllers/route_auth.go:38 +0x3a5
 net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc0000e4c40?}, 0x10?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -545,9 +545,9 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x797e80?, 0xaea500?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/models.(*User).Insert(0xc0000e2a20, {0x8a38f8, 0xc00009d3b0}, {0x0, 0x0}, {0xc00001c4e5?, {0x0?, 0xc0000e2900?, 0xc00007b9f8?}})
+todo-app/app/models.(*User).Insert(0xc0000e2a20, {0x8a38f8, 0xc00009d3b0}, {0x0, 0x0}, {0xc00001c4e5?, {0x0?, 0xc0000e2900?, 0xc00007b9f8?}})
 	/app/app/models/users.go:579 +0xc3c
-udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc0000e4e00}, 0xc0001dd8c0)
+todo-app/app/controllers.signUp({0x8a3170, 0xc0000e4e00}, 0xc0001dd8c0)
 	/app/app/controllers/route_auth.go:38 +0x3a5
 net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc0000e4e00?}, 0x10?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -565,9 +565,9 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x797e80?, 0xaea500?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/models.(*User).Insert(0xc0000e2cf0, {0x8a38f8, 0xc00009d590}, {0x0, 0x0}, {0xc00001c61d?, {0x0?, 0xc0000e2c60?, 0xc0000df9f8?}})
+todo-app/app/models.(*User).Insert(0xc0000e2cf0, {0x8a38f8, 0xc00009d590}, {0x0, 0x0}, {0xc00001c61d?, {0x0?, 0xc0000e2c60?, 0xc0000df9f8?}})
 	/app/app/models/users.go:579 +0xc3c
-udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc0000e50a0}, 0xc0001fa360)
+todo-app/app/controllers.signUp({0x8a3170, 0xc0000e50a0}, 0xc0001fa360)
 	/app/app/controllers/route_auth.go:38 +0x3a5
 net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc0000e50a0?}, 0x10?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -585,9 +585,9 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x797e80?, 0xaea500?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/models.(*User).Insert(0xc0000e2f30, {0x8a38f8, 0xc00009d680}, {0x0, 0x0}, {0xc00001c70d?, {0x0?, 0xc0000e2e10?, 0xc00007b9f8?}})
+todo-app/app/models.(*User).Insert(0xc0000e2f30, {0x8a38f8, 0xc00009d680}, {0x0, 0x0}, {0xc00001c70d?, {0x0?, 0xc0000e2e10?, 0xc00007b9f8?}})
 	/app/app/models/users.go:579 +0xc3c
-udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc0000e5260}, 0xc0001fa480)
+todo-app/app/controllers.signUp({0x8a3170, 0xc0000e5260}, 0xc0001fa480)
 	/app/app/controllers/route_auth.go:38 +0x3a5
 net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc0000e5260?}, 0x10?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -605,9 +605,9 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x797e80?, 0xaea500?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/models.(*User).Insert(0xc0001146c0, {0x8a38f8, 0xc00012c4b0}, {0x0, 0x0}, {0xc0001122ed?, {0x0?, 0xc000114630?, 0xc0000df9f8?}})
+todo-app/app/models.(*User).Insert(0xc0001146c0, {0x8a38f8, 0xc00012c4b0}, {0x0, 0x0}, {0xc0001122ed?, {0x0?, 0xc000114630?, 0xc0000df9f8?}})
 	/app/app/models/users.go:579 +0xc3c
-udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc000130620}, 0xc000111b00)
+todo-app/app/controllers.signUp({0x8a3170, 0xc000130620}, 0xc000111b00)
 	/app/app/controllers/route_auth.go:38 +0x3a5
 net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc000130620?}, 0x10?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -625,9 +625,9 @@ net/http.(*conn).serve.func1()
 	/usr/local/go/src/net/http/server.go:1903 +0xbe
 panic({0x797e80?, 0xaea500?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
-udemy-todo-app/app/models.(*User).Insert(0xc000114900, {0x8a38f8, 0xc00012c5a0}, {0x0, 0x0}, {0xc0001123dd?, {0x0?, 0xc0001147e0?, 0xc0000769f8?}})
+todo-app/app/models.(*User).Insert(0xc000114900, {0x8a38f8, 0xc00012c5a0}, {0x0, 0x0}, {0xc0001123dd?, {0x0?, 0xc0001147e0?, 0xc0000769f8?}})
 	/app/app/models/users.go:579 +0xc3c
-udemy-todo-app/app/controllers.signUp({0x8a3170, 0xc0001307e0}, 0xc000111c20)
+todo-app/app/controllers.signUp({0x8a3170, 0xc0001307e0}, 0xc000111c20)
 	/app/app/controllers/route_auth.go:38 +0x3a5
 net/http.HandlerFunc.ServeHTTP(0xafbd60?, {0x8a3170?, 0xc0001307e0?}, 0x10?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -743,11 +743,11 @@ github.com/gorilla/sessions.(*CookieStore).Save(0x804fa0?, 0xc000200ff0?, {0x0, 
 	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/store.go:114 +0x8f
 github.com/gorilla/sessions.(*Session).Save(...)
 	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/sessions.go:81
-udemy-todo-app/app/helpers.getFlashMessages({0xc000162880?, 0xc000155cc0?}, 0x86e693?, 0xc000167860, {0x86e9ac, 0xd})
+todo-app/app/helpers.getFlashMessages({0xc000162880?, 0xc000155cc0?}, 0x86e693?, 0xc000167860, {0x86e9ac, 0xd})
 	/app/app/helpers/sessions.go:24 +0x15d
-udemy-todo-app/app/helpers.GetFlashes({0x92e710, 0xc00017f0a0}, 0xc0001e67e0)
+todo-app/app/helpers.GetFlashes({0x92e710, 0xc00017f0a0}, 0xc0001e67e0)
 	/app/app/helpers/sessions.go:44 +0xa6
-udemy-todo-app/app/controllers.index({0x92e710, 0xc00017f0a0}, 0xc0001e67e0)
+todo-app/app/controllers.index({0x92e710, 0xc00017f0a0}, 0xc0001e67e0)
 	/app/app/controllers/route_main.go:31 +0xd0
 net/http.HandlerFunc.ServeHTTP(0xbbeea0?, {0x92e710?, 0xc00017f0a0?}, 0x6ae89a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -771,11 +771,11 @@ github.com/gorilla/sessions.(*CookieStore).Save(0x804fa0?, 0xc000201860?, {0x0, 
 	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/store.go:114 +0x8f
 github.com/gorilla/sessions.(*Session).Save(...)
 	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/sessions.go:81
-udemy-todo-app/app/helpers.getFlashMessages({0xc000162880?, 0xc00026c3c0?}, 0x86e693?, 0xc000167ae0, {0x86e9ac, 0xd})
+todo-app/app/helpers.getFlashMessages({0xc000162880?, 0xc00026c3c0?}, 0x86e693?, 0xc000167ae0, {0x86e9ac, 0xd})
 	/app/app/helpers/sessions.go:24 +0x15d
-udemy-todo-app/app/helpers.GetFlashes({0x92e710, 0xc00017f260}, 0xc0001e6d80)
+todo-app/app/helpers.GetFlashes({0x92e710, 0xc00017f260}, 0xc0001e6d80)
 	/app/app/helpers/sessions.go:44 +0xa6
-udemy-todo-app/app/controllers.index({0x92e710, 0xc00017f260}, 0xc0001e6d80)
+todo-app/app/controllers.index({0x92e710, 0xc00017f260}, 0xc0001e6d80)
 	/app/app/controllers/route_main.go:31 +0xd0
 net/http.HandlerFunc.ServeHTTP(0xbbeea0?, {0x92e710?, 0xc00017f260?}, 0x6ae89a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -799,11 +799,11 @@ github.com/gorilla/sessions.(*CookieStore).Save(0x804fa0?, 0xc000201e00?, {0x0, 
 	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/store.go:114 +0x8f
 github.com/gorilla/sessions.(*Session).Save(...)
 	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/sessions.go:81
-udemy-todo-app/app/helpers.getFlashMessages({0xc000162880?, 0xc00026c900?}, 0x86e693?, 0xc000167c70, {0x86e9ac, 0xd})
+todo-app/app/helpers.getFlashMessages({0xc000162880?, 0xc00026c900?}, 0x86e693?, 0xc000167c70, {0x86e9ac, 0xd})
 	/app/app/helpers/sessions.go:24 +0x15d
-udemy-todo-app/app/helpers.GetFlashes({0x92e710, 0xc00017f420}, 0xc0001e70e0)
+todo-app/app/helpers.GetFlashes({0x92e710, 0xc00017f420}, 0xc0001e70e0)
 	/app/app/helpers/sessions.go:44 +0xa6
-udemy-todo-app/app/controllers.index({0x92e710, 0xc00017f420}, 0xc0001e70e0)
+todo-app/app/controllers.index({0x92e710, 0xc00017f420}, 0xc0001e70e0)
 	/app/app/controllers/route_main.go:31 +0xd0
 net/http.HandlerFunc.ServeHTTP(0xbbeea0?, {0x92e710?, 0xc00017f420?}, 0x6ae89a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -827,11 +827,11 @@ github.com/gorilla/sessions.(*CookieStore).Save(0x804fa0?, 0xc00027a420?, {0x0, 
 	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/store.go:114 +0x8f
 github.com/gorilla/sessions.(*Session).Save(...)
 	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/sessions.go:81
-udemy-todo-app/app/helpers.getFlashMessages({0xc000162880?, 0xc00026ce40?}, 0x86e693?, 0xc000167e00, {0x86e9ac, 0xd})
+todo-app/app/helpers.getFlashMessages({0xc000162880?, 0xc00026ce40?}, 0x86e693?, 0xc000167e00, {0x86e9ac, 0xd})
 	/app/app/helpers/sessions.go:24 +0x15d
-udemy-todo-app/app/helpers.GetFlashes({0x92e710, 0xc00017f5e0}, 0xc0001e7440)
+todo-app/app/helpers.GetFlashes({0x92e710, 0xc00017f5e0}, 0xc0001e7440)
 	/app/app/helpers/sessions.go:44 +0xa6
-udemy-todo-app/app/controllers.index({0x92e710, 0xc00017f5e0}, 0xc0001e7440)
+todo-app/app/controllers.index({0x92e710, 0xc00017f5e0}, 0xc0001e7440)
 	/app/app/controllers/route_main.go:31 +0xd0
 net/http.HandlerFunc.ServeHTTP(0xbbeea0?, {0x92e710?, 0xc00017f5e0?}, 0x6ae89a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -855,11 +855,11 @@ github.com/gorilla/sessions.(*CookieStore).Save(0x804fa0?, 0xc00027a9c0?, {0x0, 
 	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/store.go:114 +0x8f
 github.com/gorilla/sessions.(*Session).Save(...)
 	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/sessions.go:81
-udemy-todo-app/app/helpers.getFlashMessages({0xc000162880?, 0xc00026d380?}, 0x86e693?, 0xc000340050, {0x86e9ac, 0xd})
+todo-app/app/helpers.getFlashMessages({0xc000162880?, 0xc00026d380?}, 0x86e693?, 0xc000340050, {0x86e9ac, 0xd})
 	/app/app/helpers/sessions.go:24 +0x15d
-udemy-todo-app/app/helpers.GetFlashes({0x92e710, 0xc00017f7a0}, 0xc0001e77a0)
+todo-app/app/helpers.GetFlashes({0x92e710, 0xc00017f7a0}, 0xc0001e77a0)
 	/app/app/helpers/sessions.go:44 +0xa6
-udemy-todo-app/app/controllers.index({0x92e710, 0xc00017f7a0}, 0xc0001e77a0)
+todo-app/app/controllers.index({0x92e710, 0xc00017f7a0}, 0xc0001e77a0)
 	/app/app/controllers/route_main.go:31 +0xd0
 net/http.HandlerFunc.ServeHTTP(0xbbeea0?, {0x92e710?, 0xc00017f7a0?}, 0x6ae89a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -883,11 +883,11 @@ github.com/gorilla/sessions.(*CookieStore).Save(0x804fa0?, 0xc00027af60?, {0x0, 
 	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/store.go:114 +0x8f
 github.com/gorilla/sessions.(*Session).Save(...)
 	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/sessions.go:81
-udemy-todo-app/app/helpers.getFlashMessages({0xc000162880?, 0xc00026d8c0?}, 0x86e693?, 0xc0003401e0, {0x86e9ac, 0xd})
+todo-app/app/helpers.getFlashMessages({0xc000162880?, 0xc00026d8c0?}, 0x86e693?, 0xc0003401e0, {0x86e9ac, 0xd})
 	/app/app/helpers/sessions.go:24 +0x15d
-udemy-todo-app/app/helpers.GetFlashes({0x92e710, 0xc00017f960}, 0xc0001e7b00)
+todo-app/app/helpers.GetFlashes({0x92e710, 0xc00017f960}, 0xc0001e7b00)
 	/app/app/helpers/sessions.go:44 +0xa6
-udemy-todo-app/app/controllers.index({0x92e710, 0xc00017f960}, 0xc0001e7b00)
+todo-app/app/controllers.index({0x92e710, 0xc00017f960}, 0xc0001e7b00)
 	/app/app/controllers/route_main.go:31 +0xd0
 net/http.HandlerFunc.ServeHTTP(0xbbeea0?, {0x92e710?, 0xc00017f960?}, 0x6ae89a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -912,11 +912,11 @@ github.com/gorilla/sessions.(*CookieStore).Save(0x804fa0?, 0xc0002526f0?, {0x0, 
 	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/store.go:114 +0x8f
 github.com/gorilla/sessions.(*Session).Save(...)
 	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/sessions.go:81
-udemy-todo-app/app/helpers.getFlashMessages({0xc00007c8a0?, 0xc000284300?}, 0x86e693?, 0xc00024c280, {0x86e9ac, 0xd})
+todo-app/app/helpers.getFlashMessages({0xc00007c8a0?, 0xc000284300?}, 0x86e693?, 0xc00024c280, {0x86e9ac, 0xd})
 	/app/app/helpers/sessions.go:24 +0x15d
-udemy-todo-app/app/helpers.GetFlashes({0x92e710, 0xc000268620}, 0xc00029e000)
+todo-app/app/helpers.GetFlashes({0x92e710, 0xc000268620}, 0xc00029e000)
 	/app/app/helpers/sessions.go:44 +0xa6
-udemy-todo-app/app/controllers.index({0x92e710, 0xc000268620}, 0xc00029e000)
+todo-app/app/controllers.index({0x92e710, 0xc000268620}, 0xc00029e000)
 	/app/app/controllers/route_main.go:31 +0xd0
 net/http.HandlerFunc.ServeHTTP(0xbbeea0?, {0x92e710?, 0xc000268620?}, 0x6ae89a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -940,11 +940,11 @@ github.com/gorilla/sessions.(*CookieStore).Save(0x804fa0?, 0xc000252f60?, {0x0, 
 	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/store.go:114 +0x8f
 github.com/gorilla/sessions.(*Session).Save(...)
 	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/sessions.go:81
-udemy-todo-app/app/helpers.getFlashMessages({0xc00007c8a0?, 0xc000284980?}, 0x86e693?, 0xc00024c500, {0x86e9ac, 0xd})
+todo-app/app/helpers.getFlashMessages({0xc00007c8a0?, 0xc000284980?}, 0x86e693?, 0xc00024c500, {0x86e9ac, 0xd})
 	/app/app/helpers/sessions.go:24 +0x15d
-udemy-todo-app/app/helpers.GetFlashes({0x92e710, 0xc0002687e0}, 0xc00029e5a0)
+todo-app/app/helpers.GetFlashes({0x92e710, 0xc0002687e0}, 0xc00029e5a0)
 	/app/app/helpers/sessions.go:44 +0xa6
-udemy-todo-app/app/controllers.index({0x92e710, 0xc0002687e0}, 0xc00029e5a0)
+todo-app/app/controllers.index({0x92e710, 0xc0002687e0}, 0xc00029e5a0)
 	/app/app/controllers/route_main.go:31 +0xd0
 net/http.HandlerFunc.ServeHTTP(0xbbeea0?, {0x92e710?, 0xc0002687e0?}, 0x6ae89a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -968,11 +968,11 @@ github.com/gorilla/sessions.(*CookieStore).Save(0x804fa0?, 0xc000253500?, {0x0, 
 	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/store.go:114 +0x8f
 github.com/gorilla/sessions.(*Session).Save(...)
 	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/sessions.go:81
-udemy-todo-app/app/helpers.getFlashMessages({0xc00007c8a0?, 0xc000284ec0?}, 0x86e693?, 0xc00024c690, {0x86e9ac, 0xd})
+todo-app/app/helpers.getFlashMessages({0xc00007c8a0?, 0xc000284ec0?}, 0x86e693?, 0xc00024c690, {0x86e9ac, 0xd})
 	/app/app/helpers/sessions.go:24 +0x15d
-udemy-todo-app/app/helpers.GetFlashes({0x92e710, 0xc0002689a0}, 0xc00029e900)
+todo-app/app/helpers.GetFlashes({0x92e710, 0xc0002689a0}, 0xc00029e900)
 	/app/app/helpers/sessions.go:44 +0xa6
-udemy-todo-app/app/controllers.index({0x92e710, 0xc0002689a0}, 0xc00029e900)
+todo-app/app/controllers.index({0x92e710, 0xc0002689a0}, 0xc00029e900)
 	/app/app/controllers/route_main.go:31 +0xd0
 net/http.HandlerFunc.ServeHTTP(0xbbeea0?, {0x92e710?, 0xc0002689a0?}, 0x6ae89a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -1016,9 +1016,9 @@ panic({0x7e7700?, 0xc000025e60?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
 log.Panicf({0x86d1ec?, 0xc000307818?}, {0xc000307870?, 0xc0000ab9a0?, 0x86e6b1?})
 	/usr/local/go/src/log/log.go:439 +0x65
-udemy-todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc000182b60}, 0xc0001e8900)
+todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc000182b60}, 0xc0001e8900)
 	/app/app/helpers/sessions.go:50 +0x21f
-udemy-todo-app/app/controllers.login({0x92e7f0, 0xc000182b60}, 0xc0001e8900)
+todo-app/app/controllers.login({0x92e7f0, 0xc000182b60}, 0xc0001e8900)
 	/app/app/controllers/route_auth.go:60 +0x126
 net/http.HandlerFunc.ServeHTTP(0xbbfea0?, {0x92e7f0?, 0xc000182b60?}, 0x6ae95a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -1040,9 +1040,9 @@ panic({0x7e7700?, 0xc0002506c0?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
 log.Panicf({0x86d1ec?, 0xc000303818?}, {0xc000303870?, 0xc00024c320?, 0x86e6b1?})
 	/usr/local/go/src/log/log.go:439 +0x65
-udemy-todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc000268700}, 0xc00029e360)
+todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc000268700}, 0xc00029e360)
 	/app/app/helpers/sessions.go:50 +0x21f
-udemy-todo-app/app/controllers.login({0x92e7f0, 0xc000268700}, 0xc00029e360)
+todo-app/app/controllers.login({0x92e7f0, 0xc000268700}, 0xc00029e360)
 	/app/app/controllers/route_auth.go:60 +0x126
 net/http.HandlerFunc.ServeHTTP(0xbbfea0?, {0x92e7f0?, 0xc000268700?}, 0x6ae95a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -1064,9 +1064,9 @@ panic({0x7e7700?, 0xc000250ab0?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
 log.Panicf({0x86d1ec?, 0xc000303818?}, {0xc000303870?, 0xc00024c500?, 0x86e6b1?})
 	/usr/local/go/src/log/log.go:439 +0x65
-udemy-todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc000268a80}, 0xc00029e6c0)
+todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc000268a80}, 0xc00029e6c0)
 	/app/app/helpers/sessions.go:50 +0x21f
-udemy-todo-app/app/controllers.login({0x92e7f0, 0xc000268a80}, 0xc00029e6c0)
+todo-app/app/controllers.login({0x92e7f0, 0xc000268a80}, 0xc00029e6c0)
 	/app/app/controllers/route_auth.go:60 +0x126
 net/http.HandlerFunc.ServeHTTP(0xbbfea0?, {0x92e7f0?, 0xc000268a80?}, 0x6ae95a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -1088,9 +1088,9 @@ panic({0x7e7700?, 0xc000250eb0?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
 log.Panicf({0x86d1ec?, 0xc000303818?}, {0xc000303870?, 0xc00024c6e0?, 0x86e6b1?})
 	/usr/local/go/src/log/log.go:439 +0x65
-udemy-todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc000268e00}, 0xc00029e900)
+todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc000268e00}, 0xc00029e900)
 	/app/app/helpers/sessions.go:50 +0x21f
-udemy-todo-app/app/controllers.login({0x92e7f0, 0xc000268e00}, 0xc00029e900)
+todo-app/app/controllers.login({0x92e7f0, 0xc000268e00}, 0xc00029e900)
 	/app/app/controllers/route_auth.go:60 +0x126
 net/http.HandlerFunc.ServeHTTP(0xbbfea0?, {0x92e7f0?, 0xc000268e00?}, 0x6ae95a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -1112,9 +1112,9 @@ panic({0x7e7700?, 0xc0002512a0?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
 log.Panicf({0x86d1ec?, 0xc000303818?}, {0xc000303870?, 0xc00024c8c0?, 0x86e6b1?})
 	/usr/local/go/src/log/log.go:439 +0x65
-udemy-todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc000269180}, 0xc00029eb40)
+todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc000269180}, 0xc00029eb40)
 	/app/app/helpers/sessions.go:50 +0x21f
-udemy-todo-app/app/controllers.login({0x92e7f0, 0xc000269180}, 0xc00029eb40)
+todo-app/app/controllers.login({0x92e7f0, 0xc000269180}, 0xc00029eb40)
 	/app/app/controllers/route_auth.go:60 +0x126
 net/http.HandlerFunc.ServeHTTP(0xbbfea0?, {0x92e7f0?, 0xc000269180?}, 0x6ae95a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -1136,9 +1136,9 @@ panic({0x7e7700?, 0xc000251690?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
 log.Panicf({0x86d1ec?, 0xc000303818?}, {0xc000303870?, 0xc00024caa0?, 0x86e6b1?})
 	/usr/local/go/src/log/log.go:439 +0x65
-udemy-todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc000269500}, 0xc00029eea0)
+todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc000269500}, 0xc00029eea0)
 	/app/app/helpers/sessions.go:50 +0x21f
-udemy-todo-app/app/controllers.login({0x92e7f0, 0xc000269500}, 0xc00029eea0)
+todo-app/app/controllers.login({0x92e7f0, 0xc000269500}, 0xc00029eea0)
 	/app/app/controllers/route_auth.go:60 +0x126
 net/http.HandlerFunc.ServeHTTP(0xbbfea0?, {0x92e7f0?, 0xc000269500?}, 0x6ae95a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -1160,9 +1160,9 @@ panic({0x7e7700?, 0xc000251a90?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
 log.Panicf({0x86d1ec?, 0xc000303818?}, {0xc000303870?, 0xc00024cc80?, 0x86e6b1?})
 	/usr/local/go/src/log/log.go:439 +0x65
-udemy-todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc000269880}, 0xc00029f200)
+todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc000269880}, 0xc00029f200)
 	/app/app/helpers/sessions.go:50 +0x21f
-udemy-todo-app/app/controllers.login({0x92e7f0, 0xc000269880}, 0xc00029f200)
+todo-app/app/controllers.login({0x92e7f0, 0xc000269880}, 0xc00029f200)
 	/app/app/controllers/route_auth.go:60 +0x126
 net/http.HandlerFunc.ServeHTTP(0xbbfea0?, {0x92e7f0?, 0xc000269880?}, 0x6ae95a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -1184,9 +1184,9 @@ panic({0x7e7700?, 0xc000251e80?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
 log.Panicf({0x86d1ec?, 0xc000303818?}, {0xc000303870?, 0xc00024ce60?, 0x86e6b1?})
 	/usr/local/go/src/log/log.go:439 +0x65
-udemy-todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc000269c00}, 0xc00029f560)
+todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc000269c00}, 0xc00029f560)
 	/app/app/helpers/sessions.go:50 +0x21f
-udemy-todo-app/app/controllers.login({0x92e7f0, 0xc000269c00}, 0xc00029f560)
+todo-app/app/controllers.login({0x92e7f0, 0xc000269c00}, 0xc00029f560)
 	/app/app/controllers/route_auth.go:60 +0x126
 net/http.HandlerFunc.ServeHTTP(0xbbfea0?, {0x92e7f0?, 0xc000269c00?}, 0x6ae95a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -1210,9 +1210,9 @@ panic({0x7e7700?, 0xc000025a90?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
 log.Panicf({0x86d1ec?, 0xc0002b3818?}, {0xc0002b3870?, 0xc0000ab8b0?, 0x86e6b1?})
 	/usr/local/go/src/log/log.go:439 +0x65
-udemy-todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc0001830a0}, 0xc0001e87e0)
+todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc0001830a0}, 0xc0001e87e0)
 	/app/app/helpers/sessions.go:50 +0x21f
-udemy-todo-app/app/controllers.login({0x92e7f0, 0xc0001830a0}, 0xc0001e87e0)
+todo-app/app/controllers.login({0x92e7f0, 0xc0001830a0}, 0xc0001e87e0)
 	/app/app/controllers/route_auth.go:67 +0x477
 net/http.HandlerFunc.ServeHTTP(0xbbfea0?, {0x92e7f0?, 0xc0001830a0?}, 0x6ae95a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -1235,9 +1235,9 @@ panic({0x7e7700?, 0xc000025b60?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
 log.Panicf({0x86d1ec?, 0xc0000e5818?}, {0xc0000e5870?, 0xc00024c0f0?, 0x86e6b1?})
 	/usr/local/go/src/log/log.go:439 +0x65
-udemy-todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc00027a000}, 0xc00026c000)
+todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc00027a000}, 0xc00026c000)
 	/app/app/helpers/sessions.go:50 +0x21f
-udemy-todo-app/app/controllers.login({0x92e7f0, 0xc00027a000}, 0xc00026c000)
+todo-app/app/controllers.login({0x92e7f0, 0xc00027a000}, 0xc00026c000)
 	/app/app/controllers/route_auth.go:67 +0x477
 net/http.HandlerFunc.ServeHTTP(0xbbfea0?, {0x92e7f0?, 0xc00027a000?}, 0x6ae95a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29
@@ -1260,9 +1260,9 @@ panic({0x7e7700?, 0xc000025d30?})
 	/usr/local/go/src/runtime/panic.go:770 +0x132
 log.Panicf({0x86d1ec?, 0xc0000e5818?}, {0xc0000e5870?, 0xc0000abc20?, 0x86e6b1?})
 	/usr/local/go/src/log/log.go:439 +0x65
-udemy-todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc0001837a0}, 0xc0001e8d80)
+todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc0001837a0}, 0xc0001e8d80)
 	/app/app/helpers/sessions.go:50 +0x21f
-udemy-todo-app/app/controllers.login({0x92e7f0, 0xc0001837a0}, 0xc0001e8d80)
+todo-app/app/controllers.login({0x92e7f0, 0xc0001837a0}, 0xc0001e8d80)
 	/app/app/controllers/route_auth.go:67 +0x477
 net/http.HandlerFunc.ServeHTTP(0xbbfea0?, {0x92e7f0?, 0xc0001837a0?}, 0x6ae95a?)
 	/usr/local/go/src/net/http/server.go:2171 +0x29

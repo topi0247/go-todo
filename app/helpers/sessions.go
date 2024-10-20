@@ -2,8 +2,8 @@ package helpers
 
 import (
 	"net/http"
-	"udemy-todo-app/app/models"
-	"udemy-todo-app/infrastructure/db"
+	"todo-app/app/models"
+	"todo-app/infrastructure/db"
 
 	"github.com/gorilla/sessions"
 )

@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 	"log"
-	"udemy-todo-app/app/controllers"
-	"udemy-todo-app/infrastructure/db"
+	"todo-app/app/controllers"
+	"todo-app/infrastructure/db"
 
 	_ "github.com/lib/pq"
 	"github.com/volatiletech/sqlboiler/boil"

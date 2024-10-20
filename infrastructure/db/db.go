@@ -2,13 +2,20 @@ package db
 
 import (
 	"database/sql"
+	"fmt"
 	"log"
+	"os"
 )
 
 var DB *sql.DB
 
 func InitDB() (err error) {
-	DB, err = sql.Open("postgres", "host=db user=postgres dbname=webapp sslmode=disable password=password")
+	host := os.Getenv("DB_HOST")
+	user := os.Getenv("DB_USER")
+	dbname := os.Getenv("DB_NAME")
+	password := os.Getenv("DB_PASSWORD")
+	dbSettings := fmt.Sprintf("host=%s user=%s dbname=%s sslmode=disable password=%s", host, user, dbname, password)
+	DB, err = sql.Open("postgres", dbSettings)
 	if err != nil {
 		log.Println("Failed to open database:", err)
 		return err

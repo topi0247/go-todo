@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"udemy-todo-app/app/helpers"
-	"udemy-todo-app/app/models"
-	"udemy-todo-app/infrastructure/db"
+	"todo-app/app/helpers"
+	"todo-app/app/models"
+	"todo-app/infrastructure/db"
 
 	"github.com/google/uuid"
 	"github.com/volatiletech/sqlboiler/v4/boil"
