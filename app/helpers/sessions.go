@@ -73,3 +73,9 @@ func GetSession(r *http.Request) string {
 	}
 	return userUUID.(string)
 }
+
+func ClearSession(w http.ResponseWriter, r *http.Request) {
+	session, _ := store.Get(r, SessionName)
+	delete(session.Values, "userUUID")
+	session.Save(r, w)
+}

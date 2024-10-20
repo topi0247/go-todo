@@ -1311,3 +1311,17 @@ created by net/http.(*Server).Serve in goroutine 1
 2024/10/20 08:35:30 sessions.go:50: flash: {[] [] []}
 2024/10/20 08:35:31 route_main.go:13: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
 2024/10/20 08:35:31 sessions.go:50: flash: {[] [] []}
+2024/10/20 08:40:09 sessions.go:50: flash: {[] [] []}
+2024/10/20 08:40:10 route_main.go:13: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:40:10 sessions.go:50: flash: {[] [] []}
+2024/10/20 08:40:15 db.go:22: Database connection established
+2024/10/20 08:40:17 sessions.go:50: flash: {[] [] []}
+2024/10/20 08:40:19 route_auth.go:58: userUUID: 
+2024/10/20 08:40:19 route_auth.go:66: sql: no rows in result set
+2024/10/20 08:40:19 sessions.go:50: flash: {[] [] []}
+2024/10/20 08:40:19 route_auth.go:68: {[] [] []}
+2024/10/20 08:40:21 route_main.go:13: userUUID: 
+2024/10/20 08:40:27 route_auth.go:58: userUUID: 
+2024/10/20 08:40:27 route_auth.go:66: sql: no rows in result set
+2024/10/20 08:40:27 sessions.go:50: flash: {[] [ログインしてください] []}
+2024/10/20 08:40:27 route_auth.go:68: {[] [ログインしてください] []}
