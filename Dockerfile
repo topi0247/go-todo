@@ -14,3 +14,5 @@ RUN set -x \
     && go install github.com/volatiletech/sqlboiler/v4/drivers/sqlboiler-psql@latest
 
 COPY . .
+
+ENTRYPOINT ["./entry-point.sh"]
