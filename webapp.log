@@ -1325,3 +1325,23 @@ created by net/http.(*Server).Serve in goroutine 1
 2024/10/20 08:40:27 route_auth.go:66: sql: no rows in result set
 2024/10/20 08:40:27 sessions.go:50: flash: {[] [ログインしてください] []}
 2024/10/20 08:40:27 route_auth.go:68: {[] [ログインしてください] []}
+2024/10/20 08:42:11 route_main.go:13: userUUID: 
+2024/10/20 08:42:13 route_auth.go:58: userUUID: 
+2024/10/20 08:42:13 route_auth.go:66: sql: no rows in result set
+2024/10/20 08:42:13 sessions.go:50: flash: {[] [] []}
+2024/10/20 08:42:13 route_auth.go:68: {[] [] []}
+2024/10/20 08:42:24 sessions.go:50: flash: {[ログインしました] [] []}
+2024/10/20 08:42:28 route_main.go:13: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:42:28 sessions.go:50: flash: {[] [] []}
+2024/10/20 08:51:57 sessions.go:50: flash: {[] [] []}
+2024/10/20 08:52:03 db.go:22: Database connection established
+2024/10/20 08:52:11 route_auth.go:58: userUUID: 
+2024/10/20 08:52:11 route_auth.go:66: sql: no rows in result set
+2024/10/20 08:52:11 route_auth.go:68: {[] [] []}
+2024/10/20 08:52:59 route_auth.go:58: userUUID: 
+2024/10/20 08:52:59 route_auth.go:66: sql: no rows in result set
+2024/10/20 08:52:59 route_auth.go:68: {[] [] []}
+2024/10/20 08:54:01 db.go:22: Database connection established
+2024/10/20 08:54:03 route_auth.go:58: userUUID: 
+2024/10/20 08:54:03 route_auth.go:66: sql: no rows in result set
+2024/10/20 08:54:03 route_auth.go:68: {[] [] []}

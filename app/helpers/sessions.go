@@ -1,7 +1,6 @@
 package helpers
 
 import (
-	"log"
 	"net/http"
 
 	"github.com/gorilla/sessions"
@@ -47,7 +46,6 @@ func GetFlashes(w http.ResponseWriter, r *http.Request) struct {
 		FlashNotice:  getFlashMessages(w, r, session, FlashNotice),
 	}
 
-	log.Printf("flash: %v", flash)
 	return flash
 }
 

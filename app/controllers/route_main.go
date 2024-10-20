@@ -30,7 +30,33 @@ func index(w http.ResponseWriter, r *http.Request) {
 		http.Redirect(w, r, "/login", http.StatusFound)
 		return
 	}
-	generateHTML(w, helpers.GetFlashes(w, r), "layout", "private_navbar", "flash", "index")
+	user, err := models.Users(
+		models.UserWhere.UUID.EQ(userUUID),
+	).One(r.Context(), db.DB)
+	if err != nil {
+		helpers.AppendFlash(w, r, helpers.FlashError, "予期せぬエラーが発生しました。再ログインしてください")
+		http.Redirect(w, r, "/login", http.StatusFound)
+		return
+	}
+	todos, err := models.Todos(
+		models.TodoWhere.UserID.EQ(user.ID),
+	).All(r.Context(), db.DB)
+	if err != nil {
+		helpers.AppendFlash(w, r, helpers.FlashError, "予期せぬエラーが発生しました。再ログインしてください")
+		http.Redirect(w, r, "/login", http.StatusFound)
+		return
+	}
+
+	flash := helpers.GetFlashes(w, r)
+
+	data := map[string]interface{}{
+		"User":         user,
+		"Todos":        todos,
+		"FlashSuccess": flash.FlashSuccess,
+		"FlashError":   flash.FlashError,
+		"FlashNotice":  flash.FlashNotice,
+	}
+	generateHTML(w, data, "layout", "private_navbar", "flash", "index")
 }
 
 // func todoNew(w http.ResponseWriter, r *http.Request) {
