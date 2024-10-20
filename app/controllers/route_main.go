@@ -93,48 +93,54 @@ func todoCreate(w http.ResponseWriter, r *http.Request) {
 	http.Redirect(w, r, "/todos", http.StatusFound)
 }
 
-// func todoEdit(w http.ResponseWriter, r *http.Request, id int) {
-// 	sess, err := session(w, r)
-// 	if err != nil {
-// 		http.Redirect(w, r, "/login", http.StatusFound)
-// 	} else {
-// 		_, err := sess.GetUserBySession()
-// 		if err != nil {
-// 			log.Println(err)
-// 		}
-// 		t, err := models.GetTodo(id)
-// 		if err != nil {
-// 			log.Println(err)
-// 		}
-// 		generateHTML(w, t, "layout", "private_navbar", "todo_edit")
-// 	}
-// }
+func todoEdit(w http.ResponseWriter, r *http.Request, id int) {
+	if !helpers.Authenticate(w, r) {
+		return
+	}
 
-// func todoUpdate(w http.ResponseWriter, r *http.Request, id int) {
-// 	sess, err := session(w, r)
-// 	if err != nil {
-// 		http.Redirect(w, r, "/login", http.StatusFound)
-// 	} else {
-// 		err := r.ParseForm()
-// 		if err != nil {
-// 			log.Println(err)
-// 		}
-// 		user, err := sess.GetUserBySession()
-// 		if err != nil {
-// 			log.Println(err)
-// 		}
-// 		content := r.PostFormValue("content")
-// 		t := &models.Todo{
-// 			ID:      id,
-// 			Content: content,
-// 			UserID:  user.ID,
-// 		}
-// 		if err := t.UpdateTodo(); err != nil {
-// 			log.Println(err)
-// 		}
-// 		http.Redirect(w, r, "/todos", http.StatusFound)
-// 	}
-// }
+	user := helpers.CurrentUser(r)
+	todo, err := models.Todos(
+		models.TodoWhere.ID.EQ(id),
+		models.TodoWhere.UserID.EQ(user.ID),
+	).One(r.Context(), db.DB)
+	if err != nil {
+		helpers.AppendFlash(w, r, helpers.FlashError, "タスクが見つかりません")
+		http.Redirect(w, r, "/todos", http.StatusFound)
+		return
+	}
+
+	generateHTML(w, todo, "layout", "private_navbar", "todo_edit")
+}
+
+func todoUpdate(w http.ResponseWriter, r *http.Request, id int) {
+	if !helpers.Authenticate(w, r) {
+		return
+	}
+
+	if err := r.ParseForm(); err != nil {
+		log.Println(err)
+	}
+
+	title := r.PostFormValue("title")
+	description := r.PostFormValue("description")
+	user := helpers.CurrentUser(r)
+
+	todo := &models.Todo{
+		ID:          id,
+		Title:       title,
+		Description: description,
+		UserID:      user.ID,
+	}
+	if _, err := todo.Update(r.Context(), db.DB, boil.Infer()); err != nil {
+		log.Println(err)
+		helpers.AppendFlash(w, r, helpers.FlashError, "タスクの更新に失敗しました")
+		http.Redirect(w, r, "/todos", http.StatusFound)
+		return
+	}
+
+	helpers.AppendFlash(w, r, helpers.FlashSuccess, "タスクを更新しました")
+	http.Redirect(w, r, "/todos", http.StatusFound)
+}
 
 // func todoDelete(w http.ResponseWriter, r *http.Request, id int) {
 // 	sess, err := session(w, r)

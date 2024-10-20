@@ -3,6 +3,8 @@ package controllers
 import (
 	"fmt"
 	"net/http"
+	"regexp"
+	"strconv"
 	"text/template"
 	"udemy-todo-app/config"
 )
@@ -17,34 +19,23 @@ func generateHTML(w http.ResponseWriter, data interface{}, filenames ...string) 
 	templates.ExecuteTemplate(w, "layout", data)
 }
 
-// func session(w http.ResponseWriter, r *http.Request) (sess models.Session, err error) {
-// 	cookie, err := r.Cookie("_cookie")
-// 	if err == nil {
-// 		sess = models.Session{UUID: cookie.Value}
-// 		if ok, _ := sess.CheckSession(); !ok {
-// 			err = fmt.Errorf("invalid session")
-// 		}
-// 	}
-// 	return sess, err
-// }
+var validPath = regexp.MustCompile("^/todos/(edit|update|delete)/([0-9]+$)")
 
-// var validPath = regexp.MustCompile("^/todos/(edit|update|delete)/([0-9]+$)")
-
-// func parseURL(fn func(http.ResponseWriter, *http.Request, int)) http.HandlerFunc {
-// 	return func(w http.ResponseWriter, r *http.Request) {
-// 		q := validPath.FindStringSubmatch(r.URL.Path)
-// 		if q == nil {
-// 			http.NotFound(w, r)
-// 			return
-// 		}
-// 		qi, err := strconv.Atoi(q[2])
-// 		if err != nil {
-// 			http.NotFound(w, r)
-// 			return
-// 		}
-// 		fn(w, r, qi)
-// 	}
-// }
+func parseURL(fn func(http.ResponseWriter, *http.Request, int)) http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		q := validPath.FindStringSubmatch(r.URL.Path)
+		if q == nil {
+			http.NotFound(w, r)
+			return
+		}
+		qi, err := strconv.Atoi(q[2])
+		if err != nil {
+			http.NotFound(w, r)
+			return
+		}
+		fn(w, r, qi)
+	}
+}
 
 func StartMainServer() error {
 	http.HandleFunc("/", top)
@@ -55,8 +46,8 @@ func StartMainServer() error {
 	http.HandleFunc("/todos", index)
 	http.HandleFunc("/todos/new", todoNew)
 	http.HandleFunc("/todos/create", todoCreate)
-	// http.HandleFunc("/todos/edit/", parseURL(todoEdit))
-	// http.HandleFunc("/todos/update/", parseURL(todoUpdate))
+	http.HandleFunc("/todos/edit/", parseURL(todoEdit))
+	http.HandleFunc("/todos/update/", parseURL(todoUpdate))
 	// http.HandleFunc("/todos/delete/", parseURL(todoDelete))
 	return http.ListenAndServe(":"+config.Config.Port, nil)
 }
