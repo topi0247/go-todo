@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"net/http"
+	"udemy-todo-app/app/helpers"
 )
 
 func top(w http.ResponseWriter, r *http.Request) {
@@ -21,7 +22,13 @@ func index(w http.ResponseWriter, r *http.Request) {
 	// 	user.Todos = todos
 	// 	generateHTML(w, user, "layout", "private_navbar", "index")
 	// }
-	generateHTML(w, nil, "layout", "private_navbar", "index")
+	userUUID := helpers.GetSession(r)
+	if userUUID == "" {
+		helpers.AppendFlash(w, r, helpers.FlashError, "ログインしてください")
+		http.Redirect(w, r, "/login", http.StatusFound)
+		return
+	}
+	generateHTML(w, helpers.GetFlashes(w, r), "layout", "private_navbar", "flash", "index")
 }
 
 // func todoNew(w http.ResponseWriter, r *http.Request) {

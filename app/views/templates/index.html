@@ -1,5 +1,6 @@
 {{ define "content" }}
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+  {{ template "flash_message" . }}
   <div class="flex justify-between items-center">
     <h1 class="text-3xl font-bold text-gray-900">Sample TodoApp</h1>
     <p class="text-lg text-gray-700">ユーザー名: <span class="font-semibold">{{.Name}}</span></p>

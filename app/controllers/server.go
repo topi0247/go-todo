@@ -49,7 +49,7 @@ func generateHTML(w http.ResponseWriter, data interface{}, filenames ...string) 
 func StartMainServer() error {
 	http.HandleFunc("/", top)
 	http.HandleFunc("/signup", signUp)
-	// http.HandleFunc("/login", login)
+	http.HandleFunc("/login", login)
 	// http.HandleFunc("/authenticate", authenticate)
 	// http.HandleFunc("/logout", logout)
 	http.HandleFunc("/todos", index)
