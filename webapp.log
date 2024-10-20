@@ -1345,3 +1345,9 @@ created by net/http.(*Server).Serve in goroutine 1
 2024/10/20 08:54:03 route_auth.go:58: userUUID: 
 2024/10/20 08:54:03 route_auth.go:66: sql: no rows in result set
 2024/10/20 08:54:03 route_auth.go:68: {[] [] []}
+2024/10/20 08:55:31 route_main.go:13: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:55:32 route_main.go:13: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:55:44 db.go:22: Database connection established
+2024/10/20 09:08:14 route_main.go:13: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 09:08:21 route_main.go:13: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 09:08:59 db.go:22: Database connection established

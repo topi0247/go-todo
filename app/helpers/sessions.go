@@ -2,6 +2,8 @@ package helpers
 
 import (
 	"net/http"
+	"udemy-todo-app/app/models"
+	"udemy-todo-app/infrastructure/db"
 
 	"github.com/gorilla/sessions"
 )
@@ -76,4 +78,35 @@ func ClearSession(w http.ResponseWriter, r *http.Request) {
 	session, _ := store.Get(r, SessionName)
 	delete(session.Values, "userUUID")
 	session.Save(r, w)
+}
+
+func Authenticate(w http.ResponseWriter, r *http.Request) bool {
+	userUUID := GetSession(r)
+	if userUUID == "" {
+		AppendFlash(w, r, FlashError, "ログインしてください")
+		http.Redirect(w, r, "/login", http.StatusFound)
+		return false
+	} else {
+		_, err := models.Users(
+			models.UserWhere.UUID.EQ(userUUID),
+		).One(r.Context(), db.DB)
+		if err != nil {
+			AppendFlash(w, r, FlashError, "予期せぬエラーが発生しました。再ログインしてください")
+			http.Redirect(w, r, "/login", http.StatusFound)
+			return false
+		}
+	}
+	return true
+}
+
+func CurrentUser(r *http.Request) (user *models.User) {
+	userUUID := GetSession(r)
+	if userUUID == "" {
+		user = &models.User{}
+	} else {
+		user, _ = models.Users(
+			models.UserWhere.UUID.EQ(userUUID),
+		).One(r.Context(), db.DB)
+	}
+	return user
 }

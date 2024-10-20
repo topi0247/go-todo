@@ -14,7 +14,10 @@
     {{ range .Todos }}
     <div class="bg-white shadow p-4 rounded-lg">
       <div class="text-lg font-semibold text-gray-900">
-        {{ .Content }}
+        <h3>{{ .Title }}</h3>
+      </div>
+      <div>
+        <p class="text-gray-600">{{ .Description }}</p>
       </div>
       <div class="flex space-x-4 mt-2">
         <a href="/todos/edit/{{.ID}}" class="text-blue-600 hover:text-blue-800 underline">編集</a>

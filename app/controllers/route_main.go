@@ -6,6 +6,8 @@ import (
 	"udemy-todo-app/app/helpers"
 	"udemy-todo-app/app/models"
 	"udemy-todo-app/infrastructure/db"
+
+	"github.com/volatiletech/sqlboiler/v4/boil"
 )
 
 func top(w http.ResponseWriter, r *http.Request) {
@@ -24,20 +26,12 @@ func top(w http.ResponseWriter, r *http.Request) {
 }
 
 func index(w http.ResponseWriter, r *http.Request) {
-	userUUID := helpers.GetSession(r)
-	if userUUID == "" {
-		helpers.AppendFlash(w, r, helpers.FlashError, "ログインしてください")
-		http.Redirect(w, r, "/login", http.StatusFound)
+	if !helpers.Authenticate(w, r) {
 		return
 	}
-	user, err := models.Users(
-		models.UserWhere.UUID.EQ(userUUID),
-	).One(r.Context(), db.DB)
-	if err != nil {
-		helpers.AppendFlash(w, r, helpers.FlashError, "予期せぬエラーが発生しました。再ログインしてください")
-		http.Redirect(w, r, "/login", http.StatusFound)
-		return
-	}
+
+	user := helpers.CurrentUser(r)
+
 	todos, err := models.Todos(
 		models.TodoWhere.UserID.EQ(user.ID),
 	).All(r.Context(), db.DB)
@@ -59,36 +53,45 @@ func index(w http.ResponseWriter, r *http.Request) {
 	generateHTML(w, data, "layout", "private_navbar", "flash", "index")
 }
 
-// func todoNew(w http.ResponseWriter, r *http.Request) {
-// 	_, err := session(w, r)
-// 	if err != nil {
-// 		http.Redirect(w, r, "/login", http.StatusFound)
-// 	} else {
-// 		generateHTML(w, nil, "layout", "private_navbar", "todo_new")
-// 	}
-// }
+func todoNew(w http.ResponseWriter, r *http.Request) {
+	if !helpers.Authenticate(w, r) {
+		return
+	}
 
-// func todoSave(w http.ResponseWriter, r *http.Request) {
-// 	sess, err := session(w, r)
-// 	if err != nil {
-// 		http.Redirect(w, r, "/login", http.StatusFound)
-// 	} else {
-// 		err = r.ParseForm()
-// 		if err != nil {
-// 			log.Println(err)
-// 		}
-// 		user, err := sess.GetUserBySession()
-// 		if err != nil {
-// 			log.Println(err)
-// 		}
-// 		content := r.PostFormValue("content")
-// 		if err := user.CreateTodo(content); err != nil {
-// 			log.Println(err)
-// 		}
+	generateHTML(w, helpers.GetFlashes(w, r), "layout", "private_navbar", "todo_new")
+}
 
-// 		http.Redirect(w, r, "/todos", http.StatusFound)
-// 	}
-// }
+func todoCreate(w http.ResponseWriter, r *http.Request) {
+	if !helpers.Authenticate(w, r) {
+		return
+	}
+
+	if err := r.ParseForm(); err != nil {
+		log.Println(err)
+		helpers.AppendFlash(w, r, helpers.FlashError, "入力値が不正です")
+		http.Redirect(w, r, "/todos/new", http.StatusFound)
+		return
+	}
+
+	title := r.PostFormValue("title")
+	description := r.PostFormValue("description")
+	user := helpers.CurrentUser(r)
+	todo := &models.Todo{
+		Title:       title,
+		Description: description,
+		UserID:      user.ID,
+	}
+
+	if err := todo.Insert(r.Context(), db.DB, boil.Infer()); err != nil {
+		log.Println(err)
+		helpers.AppendFlash(w, r, helpers.FlashError, "タスクの作成に失敗しました")
+		http.Redirect(w, r, "/todos/new", http.StatusFound)
+		return
+	}
+
+	helpers.AppendFlash(w, r, helpers.FlashSuccess, "タスクを作成しました")
+	http.Redirect(w, r, "/todos", http.StatusFound)
+}
 
 // func todoEdit(w http.ResponseWriter, r *http.Request, id int) {
 // 	sess, err := session(w, r)
