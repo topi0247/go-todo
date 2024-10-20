@@ -1,6 +1,7 @@
 package helpers
 
 import (
+	"log"
 	"net/http"
 
 	"github.com/gorilla/sessions"
@@ -19,8 +20,9 @@ func AppendFlash(w http.ResponseWriter, r *http.Request, key string, value strin
 	session.Save(r, w)
 }
 
-func getFlashMessages(session *sessions.Session, key string) []string {
+func getFlashMessages(w http.ResponseWriter, r *http.Request, session *sessions.Session, key string) []string {
 	flashes := session.Flashes(key)
+	session.Save(r, w)
 	messages := []string{}
 	for _, v := range flashes {
 		messages = append(messages, v.(string))
@@ -34,18 +36,18 @@ func GetFlashes(w http.ResponseWriter, r *http.Request) struct {
 	FlashNotice  []string
 } {
 	session, _ := store.Get(r, SessionName)
-	session.Save(r, w)
 
 	flash := struct {
 		FlashSuccess []string
 		FlashError   []string
 		FlashNotice  []string
 	}{
-		FlashSuccess: getFlashMessages(session, FlashSuccess),
-		FlashError:   getFlashMessages(session, FlashError),
-		FlashNotice:  getFlashMessages(session, FlashNotice),
+		FlashSuccess: getFlashMessages(w, r, session, FlashSuccess),
+		FlashError:   getFlashMessages(w, r, session, FlashError),
+		FlashNotice:  getFlashMessages(w, r, session, FlashNotice),
 	}
 
+	log.Printf("flash: %v", flash)
 	return flash
 }
 

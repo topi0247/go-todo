@@ -729,3 +729,570 @@ created by net/http.(*Server).Serve in goroutine 1
 2024/10/20 07:44:00 sessions.go:19: key: flash-success, value: 新規登録しました
 2024/10/20 08:06:32 db.go:22: Database connection established
 2024/10/20 08:08:08 db.go:22: Database connection established
+2024/10/20 08:14:47 db.go:22: Database connection established
+2024/10/20 08:16:20 db.go:22: Database connection established
+2024/10/20 08:16:21 server.go:3418: http: panic serving 192.168.64.1:53964: runtime error: invalid memory address or nil pointer dereference
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x808760?, 0xbac5b0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+net/http.SetCookie({0x0, 0x0}, 0xc0002700e0?)
+	/usr/local/go/src/net/http/cookie.go:171 +0x3d
+github.com/gorilla/sessions.(*CookieStore).Save(0x804fa0?, 0xc000200ff0?, {0x0, 0x0}, 0xc000167860)
+	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/store.go:114 +0x8f
+github.com/gorilla/sessions.(*Session).Save(...)
+	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/sessions.go:81
+udemy-todo-app/app/helpers.getFlashMessages({0xc000162880?, 0xc000155cc0?}, 0x86e693?, 0xc000167860, {0x86e9ac, 0xd})
+	/app/app/helpers/sessions.go:24 +0x15d
+udemy-todo-app/app/helpers.GetFlashes({0x92e710, 0xc00017f0a0}, 0xc0001e67e0)
+	/app/app/helpers/sessions.go:44 +0xa6
+udemy-todo-app/app/controllers.index({0x92e710, 0xc00017f0a0}, 0xc0001e67e0)
+	/app/app/controllers/route_main.go:31 +0xd0
+net/http.HandlerFunc.ServeHTTP(0xbbeea0?, {0x92e710?, 0xc00017f0a0?}, 0x6ae89a?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46be59?, {0x92e710, 0xc00017f0a0}, 0xc0001e67e0)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000200e70?}, {0x92e710?, 0xc00017f0a0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc00017c870, {0x92f0e0, 0xc000200d80})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 08:16:23 server.go:3418: http: panic serving 192.168.64.1:53968: runtime error: invalid memory address or nil pointer dereference
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x808760?, 0xbac5b0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+net/http.SetCookie({0x0, 0x0}, 0xc0002702a0?)
+	/usr/local/go/src/net/http/cookie.go:171 +0x3d
+github.com/gorilla/sessions.(*CookieStore).Save(0x804fa0?, 0xc000201860?, {0x0, 0x0}, 0xc000167ae0)
+	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/store.go:114 +0x8f
+github.com/gorilla/sessions.(*Session).Save(...)
+	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/sessions.go:81
+udemy-todo-app/app/helpers.getFlashMessages({0xc000162880?, 0xc00026c3c0?}, 0x86e693?, 0xc000167ae0, {0x86e9ac, 0xd})
+	/app/app/helpers/sessions.go:24 +0x15d
+udemy-todo-app/app/helpers.GetFlashes({0x92e710, 0xc00017f260}, 0xc0001e6d80)
+	/app/app/helpers/sessions.go:44 +0xa6
+udemy-todo-app/app/controllers.index({0x92e710, 0xc00017f260}, 0xc0001e6d80)
+	/app/app/controllers/route_main.go:31 +0xd0
+net/http.HandlerFunc.ServeHTTP(0xbbeea0?, {0x92e710?, 0xc00017f260?}, 0x6ae89a?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46be59?, {0x92e710, 0xc00017f260}, 0xc0001e6d80)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000201740?}, {0x92e710?, 0xc00017f260?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc00017cab0, {0x92f0e0, 0xc000200d80})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 08:16:28 server.go:3418: http: panic serving 192.168.64.1:43562: runtime error: invalid memory address or nil pointer dereference
+goroutine 27 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x808760?, 0xbac5b0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+net/http.SetCookie({0x0, 0x0}, 0xc000270460?)
+	/usr/local/go/src/net/http/cookie.go:171 +0x3d
+github.com/gorilla/sessions.(*CookieStore).Save(0x804fa0?, 0xc000201e00?, {0x0, 0x0}, 0xc000167c70)
+	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/store.go:114 +0x8f
+github.com/gorilla/sessions.(*Session).Save(...)
+	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/sessions.go:81
+udemy-todo-app/app/helpers.getFlashMessages({0xc000162880?, 0xc00026c900?}, 0x86e693?, 0xc000167c70, {0x86e9ac, 0xd})
+	/app/app/helpers/sessions.go:24 +0x15d
+udemy-todo-app/app/helpers.GetFlashes({0x92e710, 0xc00017f420}, 0xc0001e70e0)
+	/app/app/helpers/sessions.go:44 +0xa6
+udemy-todo-app/app/controllers.index({0x92e710, 0xc00017f420}, 0xc0001e70e0)
+	/app/app/controllers/route_main.go:31 +0xd0
+net/http.HandlerFunc.ServeHTTP(0xbbeea0?, {0x92e710?, 0xc00017f420?}, 0x6ae89a?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46be59?, {0x92e710, 0xc00017f420}, 0xc0001e70e0)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000201ce0?}, {0x92e710?, 0xc00017f420?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc00017ccf0, {0x92f0e0, 0xc000200d80})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 08:16:45 server.go:3418: http: panic serving 192.168.64.1:43892: runtime error: invalid memory address or nil pointer dereference
+goroutine 29 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x808760?, 0xbac5b0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+net/http.SetCookie({0x0, 0x0}, 0xc000270620?)
+	/usr/local/go/src/net/http/cookie.go:171 +0x3d
+github.com/gorilla/sessions.(*CookieStore).Save(0x804fa0?, 0xc00027a420?, {0x0, 0x0}, 0xc000167e00)
+	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/store.go:114 +0x8f
+github.com/gorilla/sessions.(*Session).Save(...)
+	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/sessions.go:81
+udemy-todo-app/app/helpers.getFlashMessages({0xc000162880?, 0xc00026ce40?}, 0x86e693?, 0xc000167e00, {0x86e9ac, 0xd})
+	/app/app/helpers/sessions.go:24 +0x15d
+udemy-todo-app/app/helpers.GetFlashes({0x92e710, 0xc00017f5e0}, 0xc0001e7440)
+	/app/app/helpers/sessions.go:44 +0xa6
+udemy-todo-app/app/controllers.index({0x92e710, 0xc00017f5e0}, 0xc0001e7440)
+	/app/app/controllers/route_main.go:31 +0xd0
+net/http.HandlerFunc.ServeHTTP(0xbbeea0?, {0x92e710?, 0xc00017f5e0?}, 0x6ae89a?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46be59?, {0x92e710, 0xc00017f5e0}, 0xc0001e7440)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00027a300?}, {0x92e710?, 0xc00017f5e0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc00017cf30, {0x92f0e0, 0xc000200d80})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 08:16:46 server.go:3418: http: panic serving 192.168.64.1:43904: runtime error: invalid memory address or nil pointer dereference
+goroutine 31 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x808760?, 0xbac5b0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+net/http.SetCookie({0x0, 0x0}, 0xc0002707e0?)
+	/usr/local/go/src/net/http/cookie.go:171 +0x3d
+github.com/gorilla/sessions.(*CookieStore).Save(0x804fa0?, 0xc00027a9c0?, {0x0, 0x0}, 0xc000340050)
+	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/store.go:114 +0x8f
+github.com/gorilla/sessions.(*Session).Save(...)
+	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/sessions.go:81
+udemy-todo-app/app/helpers.getFlashMessages({0xc000162880?, 0xc00026d380?}, 0x86e693?, 0xc000340050, {0x86e9ac, 0xd})
+	/app/app/helpers/sessions.go:24 +0x15d
+udemy-todo-app/app/helpers.GetFlashes({0x92e710, 0xc00017f7a0}, 0xc0001e77a0)
+	/app/app/helpers/sessions.go:44 +0xa6
+udemy-todo-app/app/controllers.index({0x92e710, 0xc00017f7a0}, 0xc0001e77a0)
+	/app/app/controllers/route_main.go:31 +0xd0
+net/http.HandlerFunc.ServeHTTP(0xbbeea0?, {0x92e710?, 0xc00017f7a0?}, 0x6ae89a?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46be59?, {0x92e710, 0xc00017f7a0}, 0xc0001e77a0)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00027a8a0?}, {0x92e710?, 0xc00017f7a0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc00017d170, {0x92f0e0, 0xc000200d80})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 08:16:52 server.go:3418: http: panic serving 192.168.64.1:41344: runtime error: invalid memory address or nil pointer dereference
+goroutine 33 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x808760?, 0xbac5b0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+net/http.SetCookie({0x0, 0x0}, 0xc0002709a0?)
+	/usr/local/go/src/net/http/cookie.go:171 +0x3d
+github.com/gorilla/sessions.(*CookieStore).Save(0x804fa0?, 0xc00027af60?, {0x0, 0x0}, 0xc0003401e0)
+	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/store.go:114 +0x8f
+github.com/gorilla/sessions.(*Session).Save(...)
+	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/sessions.go:81
+udemy-todo-app/app/helpers.getFlashMessages({0xc000162880?, 0xc00026d8c0?}, 0x86e693?, 0xc0003401e0, {0x86e9ac, 0xd})
+	/app/app/helpers/sessions.go:24 +0x15d
+udemy-todo-app/app/helpers.GetFlashes({0x92e710, 0xc00017f960}, 0xc0001e7b00)
+	/app/app/helpers/sessions.go:44 +0xa6
+udemy-todo-app/app/controllers.index({0x92e710, 0xc00017f960}, 0xc0001e7b00)
+	/app/app/controllers/route_main.go:31 +0xd0
+net/http.HandlerFunc.ServeHTTP(0xbbeea0?, {0x92e710?, 0xc00017f960?}, 0x6ae89a?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46be59?, {0x92e710, 0xc00017f960}, 0xc0001e7b00)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00027ae40?}, {0x92e710?, 0xc00017f960?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc00017d3b0, {0x92f0e0, 0xc000200d80})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 08:17:12 db.go:22: Database connection established
+2024/10/20 08:17:15 server.go:3418: http: panic serving 192.168.64.1:47436: runtime error: invalid memory address or nil pointer dereference
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x808760?, 0xbac5b0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+net/http.SetCookie({0x0, 0x0}, 0xc0002c80e0?)
+	/usr/local/go/src/net/http/cookie.go:171 +0x3d
+github.com/gorilla/sessions.(*CookieStore).Save(0x804fa0?, 0xc0002526f0?, {0x0, 0x0}, 0xc00024c280)
+	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/store.go:114 +0x8f
+github.com/gorilla/sessions.(*Session).Save(...)
+	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/sessions.go:81
+udemy-todo-app/app/helpers.getFlashMessages({0xc00007c8a0?, 0xc000284300?}, 0x86e693?, 0xc00024c280, {0x86e9ac, 0xd})
+	/app/app/helpers/sessions.go:24 +0x15d
+udemy-todo-app/app/helpers.GetFlashes({0x92e710, 0xc000268620}, 0xc00029e000)
+	/app/app/helpers/sessions.go:44 +0xa6
+udemy-todo-app/app/controllers.index({0x92e710, 0xc000268620}, 0xc00029e000)
+	/app/app/controllers/route_main.go:31 +0xd0
+net/http.HandlerFunc.ServeHTTP(0xbbeea0?, {0x92e710?, 0xc000268620?}, 0x6ae89a?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46be59?, {0x92e710, 0xc000268620}, 0xc00029e000)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000252570?}, {0x92e710?, 0xc000268620?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc000280090, {0x92f0e0, 0xc000252480})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 08:17:45 server.go:3418: http: panic serving 192.168.64.1:33220: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x808760?, 0xbac5b0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+net/http.SetCookie({0x0, 0x0}, 0xc0002c82a0?)
+	/usr/local/go/src/net/http/cookie.go:171 +0x3d
+github.com/gorilla/sessions.(*CookieStore).Save(0x804fa0?, 0xc000252f60?, {0x0, 0x0}, 0xc00024c500)
+	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/store.go:114 +0x8f
+github.com/gorilla/sessions.(*Session).Save(...)
+	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/sessions.go:81
+udemy-todo-app/app/helpers.getFlashMessages({0xc00007c8a0?, 0xc000284980?}, 0x86e693?, 0xc00024c500, {0x86e9ac, 0xd})
+	/app/app/helpers/sessions.go:24 +0x15d
+udemy-todo-app/app/helpers.GetFlashes({0x92e710, 0xc0002687e0}, 0xc00029e5a0)
+	/app/app/helpers/sessions.go:44 +0xa6
+udemy-todo-app/app/controllers.index({0x92e710, 0xc0002687e0}, 0xc00029e5a0)
+	/app/app/controllers/route_main.go:31 +0xd0
+net/http.HandlerFunc.ServeHTTP(0xbbeea0?, {0x92e710?, 0xc0002687e0?}, 0x6ae89a?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46be59?, {0x92e710, 0xc0002687e0}, 0xc00029e5a0)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000252e40?}, {0x92e710?, 0xc0002687e0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc0002802d0, {0x92f0e0, 0xc000252480})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 08:17:52 server.go:3418: http: panic serving 192.168.64.1:39438: runtime error: invalid memory address or nil pointer dereference
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x808760?, 0xbac5b0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+net/http.SetCookie({0x0, 0x0}, 0xc0002c8460?)
+	/usr/local/go/src/net/http/cookie.go:171 +0x3d
+github.com/gorilla/sessions.(*CookieStore).Save(0x804fa0?, 0xc000253500?, {0x0, 0x0}, 0xc00024c690)
+	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/store.go:114 +0x8f
+github.com/gorilla/sessions.(*Session).Save(...)
+	/go/pkg/mod/github.com/gorilla/sessions@v1.3.0/sessions.go:81
+udemy-todo-app/app/helpers.getFlashMessages({0xc00007c8a0?, 0xc000284ec0?}, 0x86e693?, 0xc00024c690, {0x86e9ac, 0xd})
+	/app/app/helpers/sessions.go:24 +0x15d
+udemy-todo-app/app/helpers.GetFlashes({0x92e710, 0xc0002689a0}, 0xc00029e900)
+	/app/app/helpers/sessions.go:44 +0xa6
+udemy-todo-app/app/controllers.index({0x92e710, 0xc0002689a0}, 0xc00029e900)
+	/app/app/controllers/route_main.go:31 +0xd0
+net/http.HandlerFunc.ServeHTTP(0xbbeea0?, {0x92e710?, 0xc0002689a0?}, 0x6ae89a?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46be59?, {0x92e710, 0xc0002689a0}, 0xc00029e900)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002533e0?}, {0x92e710?, 0xc0002689a0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc000280510, {0x92f0e0, 0xc000252480})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 08:17:55 db.go:22: Database connection established
+2024/10/20 08:18:49 route_auth.go:86: sql: no rows in result set
+2024/10/20 08:20:02 db.go:22: Database connection established
+2024/10/20 08:20:11 route_auth.go:86: sql: no rows in result set
+2024/10/20 08:21:14 db.go:22: Database connection established
+2024/10/20 08:21:20 route_auth.go:86: sql: no rows in result set
+2024/10/20 08:22:48 route_auth.go:86: sql: no rows in result set
+2024/10/20 08:23:39 route_auth.go:86: sql: no rows in result set
+2024/10/20 08:23:43 db.go:22: Database connection established
+2024/10/20 08:23:52 route_auth.go:88: sql: no rows in result set
+2024/10/20 08:24:36 db.go:22: Database connection established
+2024/10/20 08:24:37 route_auth.go:58: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:24:43 route_auth.go:89: sql: no rows in result set
+2024/10/20 08:24:43 route_auth.go:58: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:25:31 route_auth.go:58: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:25:57 route_auth.go:89: sql: no rows in result set
+2024/10/20 08:25:57 route_auth.go:58: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:26:16 route_auth.go:58: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:26:20 route_auth.go:89: sql: no rows in result set
+2024/10/20 08:26:20 route_auth.go:58: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:26:27 db.go:22: Database connection established
+2024/10/20 08:26:31 route_auth.go:89: sql: no rows in result set
+2024/10/20 08:26:31 route_auth.go:58: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:26:31 sessions.go:50: flash: {[] [認証に失敗しました。再度ログインしてください] []}
+2024/10/20 08:26:31 server.go:3418: http: panic serving 192.168.64.1:39930: flash: {[] [認証に失敗しました。再度ログインしてください] []}
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x7e7700?, 0xc000025e60?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+log.Panicf({0x86d1ec?, 0xc000307818?}, {0xc000307870?, 0xc0000ab9a0?, 0x86e6b1?})
+	/usr/local/go/src/log/log.go:439 +0x65
+udemy-todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc000182b60}, 0xc0001e8900)
+	/app/app/helpers/sessions.go:50 +0x21f
+udemy-todo-app/app/controllers.login({0x92e7f0, 0xc000182b60}, 0xc0001e8900)
+	/app/app/controllers/route_auth.go:60 +0x126
+net/http.HandlerFunc.ServeHTTP(0xbbfea0?, {0x92e7f0?, 0xc000182b60?}, 0x6ae95a?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46be59?, {0x92e7f0, 0xc000182b60}, 0xc0001e8900)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000252570?}, {0x92e7f0?, 0xc000182b60?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc000280090, {0x92f1c0, 0xc000252480})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 08:26:31 route_auth.go:58: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:26:31 sessions.go:50: flash: {[] [認証に失敗しました。再度ログインしてください] []}
+2024/10/20 08:26:31 server.go:3418: http: panic serving 192.168.64.1:39938: flash: {[] [認証に失敗しました。再度ログインしてください] []}
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x7e7700?, 0xc0002506c0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+log.Panicf({0x86d1ec?, 0xc000303818?}, {0xc000303870?, 0xc00024c320?, 0x86e6b1?})
+	/usr/local/go/src/log/log.go:439 +0x65
+udemy-todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc000268700}, 0xc00029e360)
+	/app/app/helpers/sessions.go:50 +0x21f
+udemy-todo-app/app/controllers.login({0x92e7f0, 0xc000268700}, 0xc00029e360)
+	/app/app/controllers/route_auth.go:60 +0x126
+net/http.HandlerFunc.ServeHTTP(0xbbfea0?, {0x92e7f0?, 0xc000268700?}, 0x6ae95a?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46be59?, {0x92e7f0, 0xc000268700}, 0xc00029e360)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000252960?}, {0x92e7f0?, 0xc000268700?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc0002802d0, {0x92f1c0, 0xc000252480})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 08:26:32 route_auth.go:58: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:26:32 sessions.go:50: flash: {[] [認証に失敗しました。再度ログインしてください] []}
+2024/10/20 08:26:32 server.go:3418: http: panic serving 192.168.64.1:39944: flash: {[] [認証に失敗しました。再度ログインしてください] []}
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x7e7700?, 0xc000250ab0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+log.Panicf({0x86d1ec?, 0xc000303818?}, {0xc000303870?, 0xc00024c500?, 0x86e6b1?})
+	/usr/local/go/src/log/log.go:439 +0x65
+udemy-todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc000268a80}, 0xc00029e6c0)
+	/app/app/helpers/sessions.go:50 +0x21f
+udemy-todo-app/app/controllers.login({0x92e7f0, 0xc000268a80}, 0xc00029e6c0)
+	/app/app/controllers/route_auth.go:60 +0x126
+net/http.HandlerFunc.ServeHTTP(0xbbfea0?, {0x92e7f0?, 0xc000268a80?}, 0x6ae95a?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46be59?, {0x92e7f0, 0xc000268a80}, 0xc00029e6c0)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000252fc0?}, {0x92e7f0?, 0xc000268a80?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc000280510, {0x92f1c0, 0xc000252480})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 08:26:37 route_auth.go:58: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:26:37 sessions.go:50: flash: {[] [認証に失敗しました。再度ログインしてください] []}
+2024/10/20 08:26:37 server.go:3418: http: panic serving 192.168.64.1:57008: flash: {[] [認証に失敗しました。再度ログインしてください] []}
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x7e7700?, 0xc000250eb0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+log.Panicf({0x86d1ec?, 0xc000303818?}, {0xc000303870?, 0xc00024c6e0?, 0x86e6b1?})
+	/usr/local/go/src/log/log.go:439 +0x65
+udemy-todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc000268e00}, 0xc00029e900)
+	/app/app/helpers/sessions.go:50 +0x21f
+udemy-todo-app/app/controllers.login({0x92e7f0, 0xc000268e00}, 0xc00029e900)
+	/app/app/controllers/route_auth.go:60 +0x126
+net/http.HandlerFunc.ServeHTTP(0xbbfea0?, {0x92e7f0?, 0xc000268e00?}, 0x6ae95a?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46be59?, {0x92e7f0, 0xc000268e00}, 0xc00029e900)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002535f0?}, {0x92e7f0?, 0xc000268e00?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc000280750, {0x92f1c0, 0xc000252480})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 08:26:43 route_auth.go:58: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:26:43 sessions.go:50: flash: {[] [認証に失敗しました。再度ログインしてください] []}
+2024/10/20 08:26:43 server.go:3418: http: panic serving 192.168.64.1:57018: flash: {[] [認証に失敗しました。再度ログインしてください] []}
+goroutine 27 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x7e7700?, 0xc0002512a0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+log.Panicf({0x86d1ec?, 0xc000303818?}, {0xc000303870?, 0xc00024c8c0?, 0x86e6b1?})
+	/usr/local/go/src/log/log.go:439 +0x65
+udemy-todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc000269180}, 0xc00029eb40)
+	/app/app/helpers/sessions.go:50 +0x21f
+udemy-todo-app/app/controllers.login({0x92e7f0, 0xc000269180}, 0xc00029eb40)
+	/app/app/controllers/route_auth.go:60 +0x126
+net/http.HandlerFunc.ServeHTTP(0xbbfea0?, {0x92e7f0?, 0xc000269180?}, 0x6ae95a?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46be59?, {0x92e7f0, 0xc000269180}, 0xc00029eb40)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000253c20?}, {0x92e7f0?, 0xc000269180?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc000280990, {0x92f1c0, 0xc000252480})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 08:26:45 route_auth.go:58: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:26:45 sessions.go:50: flash: {[] [認証に失敗しました。再度ログインしてください] []}
+2024/10/20 08:26:45 server.go:3418: http: panic serving 192.168.64.1:57030: flash: {[] [認証に失敗しました。再度ログインしてください] []}
+goroutine 29 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x7e7700?, 0xc000251690?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+log.Panicf({0x86d1ec?, 0xc000303818?}, {0xc000303870?, 0xc00024caa0?, 0x86e6b1?})
+	/usr/local/go/src/log/log.go:439 +0x65
+udemy-todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc000269500}, 0xc00029eea0)
+	/app/app/helpers/sessions.go:50 +0x21f
+udemy-todo-app/app/controllers.login({0x92e7f0, 0xc000269500}, 0xc00029eea0)
+	/app/app/controllers/route_auth.go:60 +0x126
+net/http.HandlerFunc.ServeHTTP(0xbbfea0?, {0x92e7f0?, 0xc000269500?}, 0x6ae95a?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46be59?, {0x92e7f0, 0xc000269500}, 0xc00029eea0)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0003962d0?}, {0x92e7f0?, 0xc000269500?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc000280bd0, {0x92f1c0, 0xc000252480})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 08:26:46 route_auth.go:58: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:26:46 sessions.go:50: flash: {[] [認証に失敗しました。再度ログインしてください] []}
+2024/10/20 08:26:46 server.go:3418: http: panic serving 192.168.64.1:57044: flash: {[] [認証に失敗しました。再度ログインしてください] []}
+goroutine 31 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x7e7700?, 0xc000251a90?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+log.Panicf({0x86d1ec?, 0xc000303818?}, {0xc000303870?, 0xc00024cc80?, 0x86e6b1?})
+	/usr/local/go/src/log/log.go:439 +0x65
+udemy-todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc000269880}, 0xc00029f200)
+	/app/app/helpers/sessions.go:50 +0x21f
+udemy-todo-app/app/controllers.login({0x92e7f0, 0xc000269880}, 0xc00029f200)
+	/app/app/controllers/route_auth.go:60 +0x126
+net/http.HandlerFunc.ServeHTTP(0xbbfea0?, {0x92e7f0?, 0xc000269880?}, 0x6ae95a?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46be59?, {0x92e7f0, 0xc000269880}, 0xc00029f200)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000396900?}, {0x92e7f0?, 0xc000269880?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc000280e10, {0x92f1c0, 0xc000252480})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 08:26:51 route_auth.go:58: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:26:51 sessions.go:50: flash: {[] [認証に失敗しました。再度ログインしてください] []}
+2024/10/20 08:26:51 server.go:3418: http: panic serving 192.168.64.1:46356: flash: {[] [認証に失敗しました。再度ログインしてください] []}
+goroutine 33 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x7e7700?, 0xc000251e80?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+log.Panicf({0x86d1ec?, 0xc000303818?}, {0xc000303870?, 0xc00024ce60?, 0x86e6b1?})
+	/usr/local/go/src/log/log.go:439 +0x65
+udemy-todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc000269c00}, 0xc00029f560)
+	/app/app/helpers/sessions.go:50 +0x21f
+udemy-todo-app/app/controllers.login({0x92e7f0, 0xc000269c00}, 0xc00029f560)
+	/app/app/controllers/route_auth.go:60 +0x126
+net/http.HandlerFunc.ServeHTTP(0xbbfea0?, {0x92e7f0?, 0xc000269c00?}, 0x6ae95a?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46be59?, {0x92e7f0, 0xc000269c00}, 0xc00029f560)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000396f30?}, {0x92e7f0?, 0xc000269c00?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc000281050, {0x92f1c0, 0xc000252480})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 08:27:06 db.go:22: Database connection established
+2024/10/20 08:27:07 route_auth.go:58: userUUID: 
+2024/10/20 08:27:07 route_auth.go:66: sql: no rows in result set
+2024/10/20 08:27:07 sessions.go:50: flash: {[] [] []}
+2024/10/20 08:27:07 server.go:3418: http: panic serving 192.168.64.1:44252: flash: {[] [] []}
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x7e7700?, 0xc000025a90?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+log.Panicf({0x86d1ec?, 0xc0002b3818?}, {0xc0002b3870?, 0xc0000ab8b0?, 0x86e6b1?})
+	/usr/local/go/src/log/log.go:439 +0x65
+udemy-todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc0001830a0}, 0xc0001e87e0)
+	/app/app/helpers/sessions.go:50 +0x21f
+udemy-todo-app/app/controllers.login({0x92e7f0, 0xc0001830a0}, 0xc0001e87e0)
+	/app/app/controllers/route_auth.go:67 +0x477
+net/http.HandlerFunc.ServeHTTP(0xbbfea0?, {0x92e7f0?, 0xc0001830a0?}, 0x6ae95a?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46be59?, {0x92e7f0, 0xc0001830a0}, 0xc0001e87e0)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001f4e70?}, {0x92e7f0?, 0xc0001830a0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc000180870, {0x92f1c0, 0xc0001f4d80})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 08:27:37 route_auth.go:58: userUUID: 
+2024/10/20 08:27:37 route_auth.go:66: sql: no rows in result set
+2024/10/20 08:27:37 sessions.go:50: flash: {[] [] []}
+2024/10/20 08:27:37 server.go:3418: http: panic serving 192.168.64.1:38660: flash: {[] [] []}
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x7e7700?, 0xc000025b60?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+log.Panicf({0x86d1ec?, 0xc0000e5818?}, {0xc0000e5870?, 0xc00024c0f0?, 0x86e6b1?})
+	/usr/local/go/src/log/log.go:439 +0x65
+udemy-todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc00027a000}, 0xc00026c000)
+	/app/app/helpers/sessions.go:50 +0x21f
+udemy-todo-app/app/controllers.login({0x92e7f0, 0xc00027a000}, 0xc00026c000)
+	/app/app/controllers/route_auth.go:67 +0x477
+net/http.HandlerFunc.ServeHTTP(0xbbfea0?, {0x92e7f0?, 0xc00027a000?}, 0x6ae95a?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46be59?, {0x92e7f0, 0xc00027a000}, 0xc00026c000)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000252180?}, {0x92e7f0?, 0xc00027a000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc000266000, {0x92f1c0, 0xc0001f4d80})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 08:27:38 route_auth.go:58: userUUID: 
+2024/10/20 08:27:38 route_auth.go:66: sql: no rows in result set
+2024/10/20 08:27:38 sessions.go:50: flash: {[] [] []}
+2024/10/20 08:27:38 server.go:3418: http: panic serving 192.168.64.1:38666: flash: {[] [] []}
+goroutine 15 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1903 +0xbe
+panic({0x7e7700?, 0xc000025d30?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+log.Panicf({0x86d1ec?, 0xc0000e5818?}, {0xc0000e5870?, 0xc0000abc20?, 0x86e6b1?})
+	/usr/local/go/src/log/log.go:439 +0x65
+udemy-todo-app/app/helpers.GetFlashes({0x92e7f0, 0xc0001837a0}, 0xc0001e8d80)
+	/app/app/helpers/sessions.go:50 +0x21f
+udemy-todo-app/app/controllers.login({0x92e7f0, 0xc0001837a0}, 0xc0001e8d80)
+	/app/app/controllers/route_auth.go:67 +0x477
+net/http.HandlerFunc.ServeHTTP(0xbbfea0?, {0x92e7f0?, 0xc0001837a0?}, 0x6ae95a?)
+	/usr/local/go/src/net/http/server.go:2171 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46be59?, {0x92e7f0, 0xc0001837a0}, 0xc0001e8d80)
+	/usr/local/go/src/net/http/server.go:2688 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001f5830?}, {0x92e7f0?, 0xc0001837a0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0x8e
+net/http.(*conn).serve(0xc000180cf0, {0x92f1c0, 0xc0001f4d80})
+	/usr/local/go/src/net/http/server.go:2044 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x4b4
+2024/10/20 08:27:41 db.go:22: Database connection established
+2024/10/20 08:27:42 route_auth.go:58: userUUID: 
+2024/10/20 08:27:42 route_auth.go:66: sql: no rows in result set
+2024/10/20 08:27:42 sessions.go:50: flash: {[] [] []}
+2024/10/20 08:27:42 route_auth.go:68: {[] [] []}
+2024/10/20 08:27:48 route_auth.go:89: sql: no rows in result set
+2024/10/20 08:27:48 route_auth.go:58: userUUID: 
+2024/10/20 08:27:48 route_auth.go:66: sql: no rows in result set
+2024/10/20 08:27:48 sessions.go:50: flash: {[] [認証に失敗しました。再度ログインしてください] []}
+2024/10/20 08:27:48 route_auth.go:68: {[] [認証に失敗しました。再度ログインしてください] []}
+2024/10/20 08:28:21 sessions.go:50: flash: {[ログインしました] [] []}
+2024/10/20 08:28:25 route_auth.go:58: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:28:25 sessions.go:50: flash: {[] [] []}
+2024/10/20 08:28:30 route_auth.go:89: sql: no rows in result set
+2024/10/20 08:28:30 route_auth.go:58: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:28:30 sessions.go:50: flash: {[] [認証に失敗しました。再度ログインしてください] []}
+2024/10/20 08:29:33 route_auth.go:58: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:29:33 sessions.go:50: flash: {[] [] []}
+2024/10/20 08:29:37 route_auth.go:89: sql: no rows in result set
+2024/10/20 08:29:37 route_auth.go:58: userUUID: f905b33d-0232-479c-8fae-b2176d1e6f59
+2024/10/20 08:29:37 sessions.go:50: flash: {[] [認証に失敗しました。再度ログインしてください] []}
+2024/10/20 08:29:46 sessions.go:50: flash: {[ログインしました] [] []}

@@ -50,7 +50,7 @@ func StartMainServer() error {
 	http.HandleFunc("/", top)
 	http.HandleFunc("/signup", signUp)
 	http.HandleFunc("/login", login)
-	// http.HandleFunc("/authenticate", authenticate)
+	http.HandleFunc("/authenticate", authenticate)
 	// http.HandleFunc("/logout", logout)
 	http.HandleFunc("/todos", index)
 	// http.HandleFunc("/todos/new", todoNew)

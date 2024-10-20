@@ -54,54 +54,55 @@ func signUp(w http.ResponseWriter, r *http.Request) {
 }
 
 func login(w http.ResponseWriter, r *http.Request) {
-	// _, err := session(w, r)
-	// if err != nil {
-	// 	generateHTML(w, nil, "layout", "public_navbar", "login")
-	// } else {
-	// 	http.Redirect(w, r, "/todos", http.StatusFound)
-	// }
 	userUUID := helpers.GetSession(r)
+	log.Println("userUUID:", userUUID)
 	if userUUID != "" {
 		generateHTML(w, helpers.GetFlashes(w, r), "layout", "public_navbar", "flash", "login")
 	} else {
-		user, err := models.Users(
+		_, err := models.Users(
 			qm.Where("uuid = ?", userUUID),
 		).One(r.Context(), db.DB)
-		if err != nil || user == nil {
+		if err != nil {
 			log.Println(err)
-			generateHTML(w, helpers.GetFlashes(w, r), "layout", "public_navbar", "flash", "login")
+			flash := helpers.GetFlashes(w, r)
+			log.Println(flash)
+			generateHTML(w, flash, "layout", "public_navbar", "flash", "login")
 		} else {
 			http.Redirect(w, r, "/todos", http.StatusFound)
 		}
 	}
 }
 
-// func authenticate(w http.ResponseWriter, r *http.Request) {
-// 	err := r.ParseForm()
-// 	user, err := models.GetUserByEmail(r.PostFormValue("email"))
-// 	if err != nil {
-// 		log.Println(err)
-// 		http.Redirect(w, r, "/login", http.StatusFound)
-// 	}
+func authenticate(w http.ResponseWriter, r *http.Request) {
+	err := r.ParseForm()
+	if err != nil {
+		log.Println(err)
+		helpers.AppendFlash(w, r, helpers.FlashError, "入力値が不正です")
+		http.Redirect(w, r, "/login", http.StatusFound)
+		return
+	}
 
-// 	if user.Password == models.Encrypt(r.PostFormValue("password")) {
-// 		session, err := user.CreateSession()
-// 		if err != nil {
-// 			log.Println(err)
-// 		}
+	user, err := models.Users(
+		qm.Where("email = ?", r.PostFormValue("email")),
+	).One(r.Context(), db.DB)
+	if err != nil {
+		log.Println(err)
+		helpers.AppendFlash(w, r, helpers.FlashError, "認証に失敗しました。再度ログインしてください")
+		http.Redirect(w, r, "/login", http.StatusFound)
+		return
+	}
 
-// 		cookie := http.Cookie{
-// 			Name:     "_cookie",
-// 			Value:    session.UUID,
-// 			HttpOnly: true,
-// 		}
-// 		http.SetCookie(w, &cookie)
+	if err := bcrypt.CompareHashAndPassword([]byte(user.PasswordDigest), []byte(r.PostFormValue("password"))); err != nil {
+		log.Println(err)
+		helpers.AppendFlash(w, r, helpers.FlashError, "認証に失敗しました。再度ログインしてください")
+		http.Redirect(w, r, "/login", http.StatusFound)
+		return
+	}
 
-// 		http.Redirect(w, r, "/", http.StatusFound)
-// 	} else {
-// 		http.Redirect(w, r, "/login", http.StatusFound)
-// 	}
-// }
+	helpers.CreateSession(w, r, user.UUID)
+	helpers.AppendFlash(w, r, helpers.FlashSuccess, "ログインしました")
+	http.Redirect(w, r, "/todos", http.StatusFound)
+}
 
 // func logout(w http.ResponseWriter, r *http.Request) {
 // 	cookie, err := r.Cookie("_cookie")
