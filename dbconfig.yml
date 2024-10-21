@@ -6,6 +6,6 @@ development:
 
 production:
   dialect: postgres
-  datasource: host=db user=postgres dbname=webapp sslmode=disable password=password
+  datasource: "host=$DB_HOST user=$DB_USER dbname=$DB_NAME password=$DB_PASSWORD sslmode=disable"
   dir: migrations
   table: migrations
