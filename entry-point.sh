@@ -10,5 +10,5 @@ until pg_isready -h "$DB_HOST" -U "$DB_USER"; do
   sleep 2
 done
 
-sql-migrate up
+sql-migrate up -env="production"
 go run main.go
